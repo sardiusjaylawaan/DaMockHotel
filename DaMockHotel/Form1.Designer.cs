@@ -59,9 +59,9 @@
             this.lbl_Welcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Welcome.Location = new System.Drawing.Point(335, 63);
             this.lbl_Welcome.Name = "lbl_Welcome";
-            this.lbl_Welcome.Size = new System.Drawing.Size(360, 33);
+            this.lbl_Welcome.Size = new System.Drawing.Size(368, 33);
             this.lbl_Welcome.TabIndex = 2;
-            this.lbl_Welcome.Text = "Welcome to DaMock Hotel";
+            this.lbl_Welcome.Text = "Welcome to DaMock Hotel!";
             // 
             // btn_Login
             // 
