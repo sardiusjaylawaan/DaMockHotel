@@ -43,7 +43,7 @@ namespace DaMockHotel
 
         private void btnBackToLogin_Click(object sender, EventArgs e)
         {
-            Form1 loginForm = new Form1();
+            frmLogin loginForm = new frmLogin();
             loginForm.Show();
             this.Hide(); 
         }

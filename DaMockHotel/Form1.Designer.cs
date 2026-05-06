@@ -1,6 +1,6 @@
 ﻿namespace DaMockHotel
 {
-    partial class Form1
+    partial class frmLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -35,45 +35,63 @@
             this.lbl_Username = new System.Windows.Forms.Label();
             this.lbl_Password = new System.Windows.Forms.Label();
             this.btn_CreateAcc = new System.Windows.Forms.Button();
-            this.lbl_forgotPassword = new System.Windows.Forms.Label();
+            this.lbl_NoAccount = new System.Windows.Forms.Label();
+            this.pnl_Left = new System.Windows.Forms.Panel();
+            this.lnk_Forgot = new System.Windows.Forms.LinkLabel();
+            this.lbl_Tagline = new System.Windows.Forms.Label();
+            this.lbl_Hotel = new System.Windows.Forms.Label();
+            this.pnl_LoginCard = new System.Windows.Forms.Panel();
+            this.lbl_Subtitle = new System.Windows.Forms.Label();
+            this.lbl_WelcomeLeft = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pnl_Left.SuspendLayout();
             this.SuspendLayout();
             // 
             // txt_Username
             // 
-            this.txt_Username.Location = new System.Drawing.Point(455, 135);
+            this.txt_Username.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_Username.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Username.Location = new System.Drawing.Point(671, 245);
+            this.txt_Username.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_Username.Name = "txt_Username";
-            this.txt_Username.Size = new System.Drawing.Size(136, 20);
+            this.txt_Username.Size = new System.Drawing.Size(260, 27);
             this.txt_Username.TabIndex = 0;
             // 
             // txt_Password
             // 
-            this.txt_Password.Location = new System.Drawing.Point(455, 171);
+            this.txt_Password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_Password.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Password.Location = new System.Drawing.Point(671, 317);
+            this.txt_Password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_Password.Name = "txt_Password";
-            this.txt_Password.Size = new System.Drawing.Size(136, 20);
+            this.txt_Password.Size = new System.Drawing.Size(260, 27);
             this.txt_Password.TabIndex = 1;
+            this.txt_Password.UseSystemPasswordChar = true;
             // 
             // lbl_Welcome
             // 
-            this.lbl_Welcome.AutoSize = true;
-            this.lbl_Welcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Welcome.Location = new System.Drawing.Point(335, 63);
+            this.lbl_Welcome.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Welcome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(44)))), ((int)(((byte)(67)))));
+            this.lbl_Welcome.Location = new System.Drawing.Point(670, 130);
+            this.lbl_Welcome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Welcome.Name = "lbl_Welcome";
-            this.lbl_Welcome.Size = new System.Drawing.Size(368, 33);
+            this.lbl_Welcome.Size = new System.Drawing.Size(260, 40);
             this.lbl_Welcome.TabIndex = 2;
-            this.lbl_Welcome.Text = "Welcome to DaMock Hotel!";
+            this.lbl_Welcome.Text = "Welcome Back";
             // 
             // btn_Login
             // 
-            this.btn_Login.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btn_Login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(44)))), ((int)(((byte)(67)))));
+            this.btn_Login.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Login.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btn_Login.FlatAppearance.BorderSize = 0;
             this.btn_Login.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btn_Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Login.Location = new System.Drawing.Point(455, 204);
+            this.btn_Login.ForeColor = System.Drawing.Color.White;
+            this.btn_Login.Location = new System.Drawing.Point(670, 370);
             this.btn_Login.Margin = new System.Windows.Forms.Padding(0);
             this.btn_Login.Name = "btn_Login";
-            this.btn_Login.Size = new System.Drawing.Size(59, 26);
+            this.btn_Login.Size = new System.Drawing.Size(260, 38);
             this.btn_Login.TabIndex = 3;
             this.btn_Login.Text = "Login";
             this.btn_Login.UseVisualStyleBackColor = false;
@@ -81,72 +99,163 @@
             // 
             // lbl_Username
             // 
-            this.lbl_Username.AutoSize = true;
-            this.lbl_Username.Location = new System.Drawing.Point(369, 135);
+            this.lbl_Username.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Username.Location = new System.Drawing.Point(670, 220);
+            this.lbl_Username.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Username.Name = "lbl_Username";
-            this.lbl_Username.Size = new System.Drawing.Size(61, 13);
+            this.lbl_Username.Size = new System.Drawing.Size(120, 22);
             this.lbl_Username.TabIndex = 4;
-            this.lbl_Username.Text = "Username :";
+            this.lbl_Username.Text = "Username";
             // 
             // lbl_Password
             // 
-            this.lbl_Password.AutoSize = true;
-            this.lbl_Password.Location = new System.Drawing.Point(371, 171);
+            this.lbl_Password.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Password.Location = new System.Drawing.Point(670, 292);
+            this.lbl_Password.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Password.Name = "lbl_Password";
-            this.lbl_Password.Size = new System.Drawing.Size(59, 13);
+            this.lbl_Password.Size = new System.Drawing.Size(120, 22);
             this.lbl_Password.TabIndex = 5;
-            this.lbl_Password.Text = "Password :";
+            this.lbl_Password.Text = "Password ";
+            this.lbl_Password.Click += new System.EventHandler(this.lbl_Password_Click);
             // 
             // btn_CreateAcc
             // 
-            this.btn_CreateAcc.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btn_CreateAcc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(235)))), ((int)(((byte)(248)))));
+            this.btn_CreateAcc.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_CreateAcc.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btn_CreateAcc.FlatAppearance.BorderSize = 0;
             this.btn_CreateAcc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btn_CreateAcc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_CreateAcc.Location = new System.Drawing.Point(455, 252);
+            this.btn_CreateAcc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(44)))), ((int)(((byte)(67)))));
+            this.btn_CreateAcc.Location = new System.Drawing.Point(815, 455);
+            this.btn_CreateAcc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_CreateAcc.Name = "btn_CreateAcc";
-            this.btn_CreateAcc.Size = new System.Drawing.Size(114, 26);
+            this.btn_CreateAcc.Size = new System.Drawing.Size(115, 32);
             this.btn_CreateAcc.TabIndex = 7;
-            this.btn_CreateAcc.Text = "Create new account";
+            this.btn_CreateAcc.Text = "Create Account";
             this.btn_CreateAcc.UseVisualStyleBackColor = false;
             this.btn_CreateAcc.Click += new System.EventHandler(this.btn_CreateAcc_Click);
             // 
-            // lbl_forgotPassword
+            // lbl_NoAccount
             // 
-            this.lbl_forgotPassword.AutoSize = true;
-            this.lbl_forgotPassword.Location = new System.Drawing.Point(537, 211);
-            this.lbl_forgotPassword.Name = "lbl_forgotPassword";
-            this.lbl_forgotPassword.Size = new System.Drawing.Size(92, 13);
-            this.lbl_forgotPassword.TabIndex = 8;
-            this.lbl_forgotPassword.Text = "Forgot Password?";
-            this.lbl_forgotPassword.Click += new System.EventHandler(this.lbl_forgotPassword_Click);
+            this.lbl_NoAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(100)))), ((int)(((byte)(115)))));
+            this.lbl_NoAccount.Location = new System.Drawing.Point(670, 460);
+            this.lbl_NoAccount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_NoAccount.Name = "lbl_NoAccount";
+            this.lbl_NoAccount.Size = new System.Drawing.Size(150, 24);
+            this.lbl_NoAccount.TabIndex = 9;
+            this.lbl_NoAccount.Text = "Don\'t have an account?";
+            this.lbl_NoAccount.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // pnl_Left
+            // 
+            this.pnl_Left.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(44)))), ((int)(((byte)(67)))));
+            this.pnl_Left.Controls.Add(this.label1);
+            this.pnl_Left.Location = new System.Drawing.Point(0, 0);
+            this.pnl_Left.Name = "pnl_Left";
+            this.pnl_Left.Size = new System.Drawing.Size(480, 600);
+            this.pnl_Left.TabIndex = 10;
+            // 
+            // lnk_Forgot
+            // 
+            this.lnk_Forgot.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(44)))), ((int)(((byte)(67)))));
+            this.lnk_Forgot.Location = new System.Drawing.Point(745, 420);
+            this.lnk_Forgot.Name = "lnk_Forgot";
+            this.lnk_Forgot.Size = new System.Drawing.Size(130, 24);
+            this.lnk_Forgot.TabIndex = 11;
+            this.lnk_Forgot.TabStop = true;
+            this.lnk_Forgot.Text = "Forgot password?";
+            // 
+            // lbl_Tagline
+            // 
+            this.lbl_Tagline.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(44)))), ((int)(((byte)(67)))));
+            this.lbl_Tagline.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Tagline.ForeColor = System.Drawing.Color.White;
+            this.lbl_Tagline.Location = new System.Drawing.Point(64, 220);
+            this.lbl_Tagline.Name = "lbl_Tagline";
+            this.lbl_Tagline.Size = new System.Drawing.Size(350, 30);
+            this.lbl_Tagline.TabIndex = 12;
+            this.lbl_Tagline.Text = "Simple. Comfortable. Secure.";
+            // 
+            // lbl_Hotel
+            // 
+            this.lbl_Hotel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(44)))), ((int)(((byte)(67)))));
+            this.lbl_Hotel.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Hotel.ForeColor = System.Drawing.Color.White;
+            this.lbl_Hotel.Location = new System.Drawing.Point(60, 160);
+            this.lbl_Hotel.Name = "lbl_Hotel";
+            this.lbl_Hotel.Size = new System.Drawing.Size(360, 50);
+            this.lbl_Hotel.TabIndex = 13;
+            this.lbl_Hotel.Text = "DaMock Hotel";
+            // 
+            // pnl_LoginCard
+            // 
+            this.pnl_LoginCard.BackColor = System.Drawing.Color.White;
+            this.pnl_LoginCard.Location = new System.Drawing.Point(620, 95);
+            this.pnl_LoginCard.Name = "pnl_LoginCard";
+            this.pnl_LoginCard.Size = new System.Drawing.Size(360, 410);
+            this.pnl_LoginCard.TabIndex = 14;
+            // 
+            // lbl_Subtitle
+            // 
+            this.lbl_Subtitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(110)))), ((int)(((byte)(125)))));
+            this.lbl_Subtitle.Location = new System.Drawing.Point(672, 175);
+            this.lbl_Subtitle.Name = "lbl_Subtitle";
+            this.lbl_Subtitle.Size = new System.Drawing.Size(260, 24);
+            this.lbl_Subtitle.TabIndex = 15;
+            this.lbl_Subtitle.Text = "Please login to your account";
+            // 
+            // lbl_WelcomeLeft
+            // 
+            this.lbl_WelcomeLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(44)))), ((int)(((byte)(67)))));
+            this.lbl_WelcomeLeft.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_WelcomeLeft.ForeColor = System.Drawing.Color.White;
+            this.lbl_WelcomeLeft.Location = new System.Drawing.Point(64, 300);
+            this.lbl_WelcomeLeft.Name = "lbl_WelcomeLeft";
+            this.lbl_WelcomeLeft.Size = new System.Drawing.Size(300, 35);
+            this.lbl_WelcomeLeft.TabIndex = 16;
+            this.lbl_WelcomeLeft.Text = "Welcome back";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(308, 259);
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(44)))), ((int)(((byte)(67)))));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(230)))), ((int)(((byte)(240)))));
+            this.label1.Location = new System.Drawing.Point(64, 340);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 13);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Don\'t have an account?";
+            this.label1.Size = new System.Drawing.Size(340, 30);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "label1Login to manage bookings and guests.";
             // 
-            // Form1
+            // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1077, 543);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.lbl_forgotPassword);
-            this.Controls.Add(this.btn_CreateAcc);
-            this.Controls.Add(this.lbl_Password);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
+            this.ClientSize = new System.Drawing.Size(1265, 732);
+            this.Controls.Add(this.lbl_WelcomeLeft);
+            this.Controls.Add(this.lbl_Subtitle);
+            this.Controls.Add(this.lbl_Hotel);
+            this.Controls.Add(this.lbl_Tagline);
+            this.Controls.Add(this.lbl_NoAccount);
+            this.Controls.Add(this.lnk_Forgot);
             this.Controls.Add(this.lbl_Username);
-            this.Controls.Add(this.btn_Login);
+            this.Controls.Add(this.lbl_Password);
+            this.Controls.Add(this.pnl_Left);
+            this.Controls.Add(this.btn_CreateAcc);
             this.Controls.Add(this.lbl_Welcome);
+            this.Controls.Add(this.btn_Login);
             this.Controls.Add(this.txt_Password);
             this.Controls.Add(this.txt_Username);
-            this.Name = "Form1";
-            this.Text = "z";
+            this.Controls.Add(this.pnl_LoginCard);
+            this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "frmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "DaMock Hotel - Login";
+            this.pnl_Left.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -161,7 +270,14 @@
         private System.Windows.Forms.Label lbl_Username;
         private System.Windows.Forms.Label lbl_Password;
         private System.Windows.Forms.Button btn_CreateAcc;
-        private System.Windows.Forms.Label lbl_forgotPassword;
+        private System.Windows.Forms.Label lbl_NoAccount;
+        private System.Windows.Forms.Panel pnl_Left;
+        private System.Windows.Forms.LinkLabel lnk_Forgot;
+        private System.Windows.Forms.Label lbl_Tagline;
+        private System.Windows.Forms.Label lbl_Hotel;
+        private System.Windows.Forms.Panel pnl_LoginCard;
+        private System.Windows.Forms.Label lbl_Subtitle;
+        private System.Windows.Forms.Label lbl_WelcomeLeft;
         private System.Windows.Forms.Label label1;
     }
 }
