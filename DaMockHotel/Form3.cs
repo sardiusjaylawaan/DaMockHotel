@@ -17,5 +17,15 @@ namespace DaMockHotel
             InitializeComponent();
 
         }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_Find_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

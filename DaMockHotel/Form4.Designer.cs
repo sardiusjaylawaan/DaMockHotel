@@ -340,7 +340,7 @@
             this.panel1.Controls.Add(this.lbl_Gender);
             this.panel1.Controls.Add(this.cmb_Day);
             this.panel1.Controls.Add(this.cmb_Year);
-            this.panel1.Location = new System.Drawing.Point(177, 12);
+            this.panel1.Location = new System.Drawing.Point(481, 62);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(349, 587);
             this.panel1.TabIndex = 18;
@@ -350,7 +350,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(775, 636);
+            this.ClientSize = new System.Drawing.Size(1265, 732);
             this.Controls.Add(this.panel1);
             this.Name = "Form4";
             this.Text = "Form4";
