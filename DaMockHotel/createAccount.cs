@@ -29,7 +29,7 @@ namespace DaMockHotel
             {
                 MessageBox.Show("Please choose a username.");
                 return;
-                            }
+            }
 
                 if (string.IsNullOrEmpty(firstName) || string.IsNullOrEmpty(email))
             {
@@ -39,6 +39,9 @@ namespace DaMockHotel
 
             
             MessageBox.Show($"Account created for {firstName} {lastName}!");
+            Frm_Login loginForm = new Frm_Login();
+            loginForm.Show();
+            this.Hide();
         }
 
         private void btnBackToLogin_Click(object sender, EventArgs e)
@@ -48,6 +51,9 @@ namespace DaMockHotel
             this.Hide(); 
         }
 
-       
+        private void Frm_createAccount_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

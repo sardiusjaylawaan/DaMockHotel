@@ -35,10 +35,10 @@
             this.llbl_Customer = new System.Windows.Forms.LinkLabel();
             this.lbl_contact = new System.Windows.Forms.Label();
             this.btn_forgotsubmit = new System.Windows.Forms.Button();
-            this.txt_forgotemail = new System.Windows.Forms.TextBox();
+            this.txt_forgotEmail = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lbl_forgot = new System.Windows.Forms.Label();
-            this.lbl_back = new System.Windows.Forms.Label();
+            this.btn_back = new System.Windows.Forms.Button();
             this.pnl_forgotpass.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,17 +72,17 @@
             // pnl_forgotpass
             // 
             this.pnl_forgotpass.BackColor = System.Drawing.Color.LightGray;
+            this.pnl_forgotpass.Controls.Add(this.btn_back);
             this.pnl_forgotpass.Controls.Add(this.llbl_Customer);
             this.pnl_forgotpass.Controls.Add(this.lbl_contact);
             this.pnl_forgotpass.Controls.Add(this.btn_forgotsubmit);
-            this.pnl_forgotpass.Controls.Add(this.txt_forgotemail);
+            this.pnl_forgotpass.Controls.Add(this.txt_forgotEmail);
             this.pnl_forgotpass.Controls.Add(this.label2);
             this.pnl_forgotpass.Controls.Add(this.lbl_forgot);
-            this.pnl_forgotpass.Controls.Add(this.lbl_back);
             this.pnl_forgotpass.Controls.Add(this.label4);
             this.pnl_forgotpass.Location = new System.Drawing.Point(-2, -1);
             this.pnl_forgotpass.Name = "pnl_forgotpass";
-            this.pnl_forgotpass.Size = new System.Drawing.Size(441, 561);
+            this.pnl_forgotpass.Size = new System.Drawing.Size(386, 561);
             this.pnl_forgotpass.TabIndex = 6;
             // 
             // llbl_Customer
@@ -90,7 +90,7 @@
             this.llbl_Customer.AutoSize = true;
             this.llbl_Customer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.llbl_Customer.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.llbl_Customer.Location = new System.Drawing.Point(158, 478);
+            this.llbl_Customer.Location = new System.Drawing.Point(125, 478);
             this.llbl_Customer.Name = "llbl_Customer";
             this.llbl_Customer.Size = new System.Drawing.Size(122, 17);
             this.llbl_Customer.TabIndex = 10;
@@ -101,7 +101,7 @@
             // 
             this.lbl_contact.AutoSize = true;
             this.lbl_contact.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_contact.Location = new System.Drawing.Point(89, 452);
+            this.lbl_contact.Location = new System.Drawing.Point(62, 451);
             this.lbl_contact.Name = "lbl_contact";
             this.lbl_contact.Size = new System.Drawing.Size(260, 17);
             this.lbl_contact.TabIndex = 9;
@@ -109,26 +109,27 @@
             // 
             // btn_forgotsubmit
             // 
-            this.btn_forgotsubmit.Location = new System.Drawing.Point(297, 260);
+            this.btn_forgotsubmit.Location = new System.Drawing.Point(264, 245);
             this.btn_forgotsubmit.Name = "btn_forgotsubmit";
-            this.btn_forgotsubmit.Size = new System.Drawing.Size(91, 30);
+            this.btn_forgotsubmit.Size = new System.Drawing.Size(85, 30);
             this.btn_forgotsubmit.TabIndex = 8;
             this.btn_forgotsubmit.Text = "Continue";
             this.btn_forgotsubmit.UseVisualStyleBackColor = true;
+            this.btn_forgotsubmit.Click += new System.EventHandler(this.btn_forgotsubmit_Click);
             // 
-            // txt_forgotemail
+            // txt_forgotEmail
             // 
-            this.txt_forgotemail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_forgotemail.Location = new System.Drawing.Point(51, 222);
-            this.txt_forgotemail.Name = "txt_forgotemail";
-            this.txt_forgotemail.Size = new System.Drawing.Size(337, 23);
-            this.txt_forgotemail.TabIndex = 7;
+            this.txt_forgotEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_forgotEmail.Location = new System.Drawing.Point(34, 207);
+            this.txt_forgotEmail.Name = "txt_forgotEmail";
+            this.txt_forgotEmail.Size = new System.Drawing.Size(315, 23);
+            this.txt_forgotEmail.TabIndex = 7;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(77, 181);
+            this.label2.Location = new System.Drawing.Point(31, 171);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(259, 17);
             this.label2.TabIndex = 6;
@@ -137,36 +138,36 @@
             // lbl_forgot
             // 
             this.lbl_forgot.AutoSize = true;
-            this.lbl_forgot.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_forgot.Location = new System.Drawing.Point(43, 121);
+            this.lbl_forgot.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_forgot.Location = new System.Drawing.Point(27, 129);
             this.lbl_forgot.Name = "lbl_forgot";
-            this.lbl_forgot.Size = new System.Drawing.Size(345, 46);
+            this.lbl_forgot.Size = new System.Drawing.Size(322, 42);
             this.lbl_forgot.TabIndex = 5;
             this.lbl_forgot.Text = "Forgot Password?";
             // 
-            // lbl_back
+            // btn_back
             // 
-            this.lbl_back.AutoSize = true;
-            this.lbl_back.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_back.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lbl_back.Location = new System.Drawing.Point(13, 30);
-            this.lbl_back.Name = "lbl_back";
-            this.lbl_back.Size = new System.Drawing.Size(108, 17);
-            this.lbl_back.TabIndex = 4;
-            this.lbl_back.Text = "↩ Back to Login";
+            this.btn_back.Location = new System.Drawing.Point(173, 245);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(85, 30);
+            this.btn_back.TabIndex = 11;
+            this.btn_back.Text = "Go back";
+            this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // Frm_forgotPassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(438, 557);
+            this.ClientSize = new System.Drawing.Size(378, 557);
             this.Controls.Add(this.pnl_forgotpass);
             this.Controls.Add(this.lbl_Enteremail);
             this.Controls.Add(this.lbl_Find);
             this.Name = "Frm_forgotPassword";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DaMock Hotel - Forgot Password";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Frm_forgotPassword_FormClosed);
             this.Load += new System.EventHandler(this.Form3_Load);
             this.pnl_forgotpass.ResumeLayout(false);
             this.pnl_forgotpass.PerformLayout();
@@ -181,12 +182,12 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lbl_Enteremail;
         private System.Windows.Forms.Panel pnl_forgotpass;
-        private System.Windows.Forms.Label lbl_back;
-        private System.Windows.Forms.TextBox txt_forgotemail;
+        private System.Windows.Forms.TextBox txt_forgotEmail;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lbl_forgot;
         private System.Windows.Forms.Button btn_forgotsubmit;
         private System.Windows.Forms.LinkLabel llbl_Customer;
         private System.Windows.Forms.Label lbl_contact;
+        private System.Windows.Forms.Button btn_back;
     }
 }

@@ -47,6 +47,8 @@
             this.txt_Username = new System.Windows.Forms.TextBox();
             this.lbl_Username = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lbl_lastName = new System.Windows.Forms.Label();
+            this.lbl_firstName = new System.Windows.Forms.Label();
             this.pnl_Left = new System.Windows.Forms.Panel();
             this.lbl_Tagline = new System.Windows.Forms.Label();
             this.lbl_Hotel = new System.Windows.Forms.Label();
@@ -61,7 +63,7 @@
             this.lbl_Createnew.AutoSize = true;
             this.lbl_Createnew.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Createnew.ForeColor = System.Drawing.Color.DimGray;
-            this.lbl_Createnew.Location = new System.Drawing.Point(42, 15);
+            this.lbl_Createnew.Location = new System.Drawing.Point(42, 14);
             this.lbl_Createnew.Name = "lbl_Createnew";
             this.lbl_Createnew.Size = new System.Drawing.Size(267, 37);
             this.lbl_Createnew.TabIndex = 0;
@@ -72,7 +74,7 @@
             this.lbl_name.AutoSize = true;
             this.lbl_name.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_name.ForeColor = System.Drawing.Color.DimGray;
-            this.lbl_name.Location = new System.Drawing.Point(46, 77);
+            this.lbl_name.Location = new System.Drawing.Point(46, 67);
             this.lbl_name.Name = "lbl_name";
             this.lbl_name.Size = new System.Drawing.Size(44, 17);
             this.lbl_name.TabIndex = 1;
@@ -81,20 +83,18 @@
             // txt_Firstname
             // 
             this.txt_Firstname.ForeColor = System.Drawing.Color.Gray;
-            this.txt_Firstname.Location = new System.Drawing.Point(49, 104);
+            this.txt_Firstname.Location = new System.Drawing.Point(49, 110);
             this.txt_Firstname.Name = "txt_Firstname";
             this.txt_Firstname.Size = new System.Drawing.Size(118, 20);
             this.txt_Firstname.TabIndex = 2;
-            this.txt_Firstname.Text = "First Name";
             // 
             // txt_Lastname
             // 
             this.txt_Lastname.ForeColor = System.Drawing.Color.Gray;
-            this.txt_Lastname.Location = new System.Drawing.Point(173, 104);
+            this.txt_Lastname.Location = new System.Drawing.Point(173, 110);
             this.txt_Lastname.Name = "txt_Lastname";
             this.txt_Lastname.Size = new System.Drawing.Size(118, 20);
             this.txt_Lastname.TabIndex = 3;
-            this.txt_Lastname.Text = "Last Name";
             // 
             // label3
             // 
@@ -177,6 +177,26 @@
             this.cmb_Year.ForeColor = System.Drawing.Color.Gray;
             this.cmb_Year.FormattingEnabled = true;
             this.cmb_Year.Items.AddRange(new object[] {
+            "1980",
+            "1981",
+            "1982",
+            "1983",
+            "1984",
+            "1985",
+            "1986",
+            "1987",
+            "1988",
+            "1989",
+            "1990",
+            "1991",
+            "1992",
+            "1993",
+            "1994",
+            "1995",
+            "1996",
+            "1997",
+            "1998",
+            "1999",
             "2000",
             "2001",
             "2002",
@@ -189,7 +209,6 @@
             "2009",
             "2010 ",
             "2011",
-            "",
             "2012",
             "2013",
             "2014",
@@ -228,8 +247,7 @@
             this.cmb_Gender.FormattingEnabled = true;
             this.cmb_Gender.Items.AddRange(new object[] {
             "Male",
-            "Female",
-            ""});
+            "Female"});
             this.cmb_Gender.Location = new System.Drawing.Point(49, 315);
             this.cmb_Gender.Name = "cmb_Gender";
             this.cmb_Gender.Size = new System.Drawing.Size(242, 21);
@@ -328,6 +346,8 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.LightGray;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.lbl_lastName);
+            this.panel1.Controls.Add(this.lbl_firstName);
             this.panel1.Controls.Add(this.lbl_Createnew);
             this.panel1.Controls.Add(this.btn_HaveAcc);
             this.panel1.Controls.Add(this.lbl_Username);
@@ -346,10 +366,30 @@
             this.panel1.Controls.Add(this.lbl_Gender);
             this.panel1.Controls.Add(this.cmb_Day);
             this.panel1.Controls.Add(this.cmb_Year);
-            this.panel1.Location = new System.Drawing.Point(622, 24);
+            this.panel1.Location = new System.Drawing.Point(618, 10);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(342, 555);
+            this.panel1.Size = new System.Drawing.Size(345, 578);
             this.panel1.TabIndex = 18;
+            // 
+            // lbl_lastName
+            // 
+            this.lbl_lastName.AutoSize = true;
+            this.lbl_lastName.ForeColor = System.Drawing.Color.Gray;
+            this.lbl_lastName.Location = new System.Drawing.Point(170, 94);
+            this.lbl_lastName.Name = "lbl_lastName";
+            this.lbl_lastName.Size = new System.Drawing.Size(58, 13);
+            this.lbl_lastName.TabIndex = 19;
+            this.lbl_lastName.Text = "Last Name";
+            // 
+            // lbl_firstName
+            // 
+            this.lbl_firstName.AutoSize = true;
+            this.lbl_firstName.ForeColor = System.Drawing.Color.Gray;
+            this.lbl_firstName.Location = new System.Drawing.Point(46, 94);
+            this.lbl_firstName.Name = "lbl_firstName";
+            this.lbl_firstName.Size = new System.Drawing.Size(57, 13);
+            this.lbl_firstName.TabIndex = 18;
+            this.lbl_firstName.Text = "First Name";
             // 
             // pnl_Left
             // 
@@ -418,6 +458,7 @@
             this.Name = "Frm_createAccount";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DaMock Hotel - Create Account";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Frm_createAccount_FormClosed);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.pnl_Left.ResumeLayout(false);
@@ -451,5 +492,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbl_Hotel;
         private System.Windows.Forms.Label lbl_Tagline;
+        private System.Windows.Forms.Label lbl_lastName;
+        private System.Windows.Forms.Label lbl_firstName;
     }
 }

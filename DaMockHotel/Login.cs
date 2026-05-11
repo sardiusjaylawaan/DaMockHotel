@@ -15,7 +15,6 @@ namespace DaMockHotel
         public Frm_Login()
         {
             InitializeComponent();
-            this.Load += frmLogin_Load;
         }
 
         private void btn_Login_Click(object sender, EventArgs e)
@@ -39,13 +38,17 @@ namespace DaMockHotel
         private void btn_CreateAcc_Click(object sender, EventArgs e)
         {
             Frm_createAccount registerForm = new Frm_createAccount();
-            registerForm.ShowDialog();
+            this.Hide();
+            registerForm.Show();
+            
         }
 
         private void lbl_forgotPassword_Click(object sender, EventArgs e)
         {
             Frm_forgotPassword forgotPassword = new Frm_forgotPassword(txt_Username.Text);
+            this.Hide();
             forgotPassword.Show();
+
         }
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
@@ -128,9 +131,16 @@ namespace DaMockHotel
             }
         }
 
-        private void lbl_Tagline_Click(object sender, EventArgs e)
+        private void lnk_Forgot_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            Frm_forgotPassword forgotPassword = new Frm_forgotPassword(txt_Username.Text);
+            forgotPassword.Show();
+            this.Hide();
+        }
 
+        private void Frm_Login_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
