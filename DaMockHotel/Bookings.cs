@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace DaMockHotel
 {
-    public partial class Form8 : Form
+    public partial class Bookings : Form
     {
-        public Form8()
+        public Bookings()
         {
             InitializeComponent();
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

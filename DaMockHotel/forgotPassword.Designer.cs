@@ -1,6 +1,6 @@
 ﻿namespace DaMockHotel
 {
-    partial class Form3
+    partial class Frm_forgotPassword
     {
         /// <summary>
         /// Required designer variable.
@@ -80,7 +80,7 @@
             this.pnl_forgotpass.Controls.Add(this.lbl_forgot);
             this.pnl_forgotpass.Controls.Add(this.lbl_back);
             this.pnl_forgotpass.Controls.Add(this.label4);
-            this.pnl_forgotpass.Location = new System.Drawing.Point(12, 12);
+            this.pnl_forgotpass.Location = new System.Drawing.Point(-2, -1);
             this.pnl_forgotpass.Name = "pnl_forgotpass";
             this.pnl_forgotpass.Size = new System.Drawing.Size(441, 561);
             this.pnl_forgotpass.TabIndex = 6;
@@ -155,16 +155,16 @@
             this.lbl_back.TabIndex = 4;
             this.lbl_back.Text = "↩ Back to Login";
             // 
-            // Form3
+            // Frm_forgotPassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(467, 585);
+            this.ClientSize = new System.Drawing.Size(438, 557);
             this.Controls.Add(this.pnl_forgotpass);
             this.Controls.Add(this.lbl_Enteremail);
             this.Controls.Add(this.lbl_Find);
-            this.Name = "Form3";
+            this.Name = "Frm_forgotPassword";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DaMock Hotel - Forgot Password";
             this.Load += new System.EventHandler(this.Form3_Load);

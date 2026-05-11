@@ -1,6 +1,6 @@
 ﻿namespace DaMockHotel
 {
-    partial class Form7
+    partial class Bookings
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form7));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Bookings));
             this.panel1 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -41,14 +41,14 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.button6 = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -184,17 +184,6 @@
             this.panel2.Size = new System.Drawing.Size(722, 179);
             this.panel2.TabIndex = 7;
             // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(43, 59);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(146, 20);
-            this.checkBox1.TabIndex = 7;
-            this.checkBox1.Text = "I\'m traveling for work";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(96)))), ((int)(((byte)(210)))));
@@ -205,6 +194,17 @@
             this.button6.TabIndex = 8;
             this.button6.Text = "Search";
             this.button6.UseVisualStyleBackColor = false;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Location = new System.Drawing.Point(43, 59);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(146, 20);
+            this.checkBox1.TabIndex = 7;
+            this.checkBox1.Text = "I\'m traveling for work";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
@@ -246,17 +246,6 @@
             this.panel3.Size = new System.Drawing.Size(258, 185);
             this.panel3.TabIndex = 11;
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(14, 11);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(189, 65);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Please ensure that all booking \r\ndetails are entered correctly \r\nbefore confirmin" +
-    "g your reservation.\r\nAvailability and pricing may change\r\nwithout prior notice.";
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -268,6 +257,17 @@
             this.label9.Text = "Damock Hotel is committed to providing\r\na comfortable and enjoyable experience fo" +
     "r \r\nall guests. Please respect hotel policies and \r\nfacilities during your stay." +
     "";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(14, 11);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(189, 65);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Please ensure that all booking \r\ndetails are entered correctly \r\nbefore confirmin" +
+    "g your reservation.\r\nAvailability and pricing may change\r\nwithout prior notice.";
             // 
             // button7
             // 
@@ -297,7 +297,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Name = "Form7";
-            this.Text = "Form7";
+            this.Text = "DaMock Hotel - Bookings";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

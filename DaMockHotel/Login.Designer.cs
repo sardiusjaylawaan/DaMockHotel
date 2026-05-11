@@ -1,6 +1,6 @@
 ﻿namespace DaMockHotel
 {
-    partial class frmLogin
+    partial class Frm_Login
     {
         /// <summary>
         /// Required designer variable.
@@ -37,13 +37,14 @@
             this.btn_CreateAcc = new System.Windows.Forms.Button();
             this.lbl_NoAccount = new System.Windows.Forms.Label();
             this.pnl_Left = new System.Windows.Forms.Panel();
+            this.lbl_Tagline = new System.Windows.Forms.Label();
+            this.lbl_Hotel = new System.Windows.Forms.Label();
             this.lbl_WelcomeLeft = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lnk_Forgot = new System.Windows.Forms.LinkLabel();
-            this.lbl_Tagline = new System.Windows.Forms.Label();
-            this.lbl_Hotel = new System.Windows.Forms.Label();
             this.pnl_LoginCard = new System.Windows.Forms.Panel();
             this.lbl_Subtitle = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.pnl_Left.SuspendLayout();
             this.pnl_LoginCard.SuspendLayout();
             this.SuspendLayout();
@@ -67,7 +68,7 @@
             this.txt_Password.Location = new System.Drawing.Point(45, 250);
             this.txt_Password.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Password.Name = "txt_Password";
-            this.txt_Password.Size = new System.Drawing.Size(260, 27);
+            this.txt_Password.Size = new System.Drawing.Size(270, 27);
             this.txt_Password.TabIndex = 1;
             this.txt_Password.UseSystemPasswordChar = true;
             // 
@@ -132,7 +133,6 @@
             // 
             // btn_CreateAcc
             // 
-            this.btn_CreateAcc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(232)))), ((int)(((byte)(240)))));
             this.btn_CreateAcc.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btn_CreateAcc.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_CreateAcc.FlatAppearance.BorderColor = System.Drawing.Color.White;
@@ -165,6 +165,7 @@
             // pnl_Left
             // 
             this.pnl_Left.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.pnl_Left.Controls.Add(this.label2);
             this.pnl_Left.Controls.Add(this.lbl_Tagline);
             this.pnl_Left.Controls.Add(this.lbl_Hotel);
             this.pnl_Left.Controls.Add(this.lbl_WelcomeLeft);
@@ -174,30 +175,6 @@
             this.pnl_Left.Name = "pnl_Left";
             this.pnl_Left.Size = new System.Drawing.Size(490, 650);
             this.pnl_Left.TabIndex = 10;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(213)))), ((int)(((byte)(225)))));
-            this.label1.Location = new System.Drawing.Point(85, 380);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(199, 17);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "Login to manage your bookings ";
-            // 
-            // lnk_Forgot
-            // 
-            this.lnk_Forgot.AutoSize = true;
-            this.lnk_Forgot.BackColor = System.Drawing.Color.LightGray;
-            this.lnk_Forgot.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lnk_Forgot.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(44)))), ((int)(((byte)(67)))));
-            this.lnk_Forgot.Location = new System.Drawing.Point(120, 375);
-            this.lnk_Forgot.Name = "lnk_Forgot";
-            this.lnk_Forgot.Size = new System.Drawing.Size(114, 17);
-            this.lnk_Forgot.TabIndex = 11;
-            this.lnk_Forgot.TabStop = true;
-            this.lnk_Forgot.Text = "Forgot password?";
             // 
             // lbl_Tagline
             // 
@@ -224,9 +201,40 @@
             this.lbl_Hotel.TabIndex = 13;
             this.lbl_Hotel.Text = "DaMock Hotel";
             // 
+            // lbl_WelcomeLeft
+            // 
+            this.lbl_WelcomeLeft.Location = new System.Drawing.Point(0, 0);
+            this.lbl_WelcomeLeft.Name = "lbl_WelcomeLeft";
+            this.lbl_WelcomeLeft.Size = new System.Drawing.Size(100, 23);
+            this.lbl_WelcomeLeft.TabIndex = 14;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(213)))), ((int)(((byte)(225)))));
+            this.label1.Location = new System.Drawing.Point(86, 380);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(199, 17);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Login to manage your bookings ";
+            // 
+            // lnk_Forgot
+            // 
+            this.lnk_Forgot.AutoSize = true;
+            this.lnk_Forgot.BackColor = System.Drawing.Color.LightGray;
+            this.lnk_Forgot.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lnk_Forgot.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(44)))), ((int)(((byte)(67)))));
+            this.lnk_Forgot.Location = new System.Drawing.Point(120, 375);
+            this.lnk_Forgot.Name = "lnk_Forgot";
+            this.lnk_Forgot.Size = new System.Drawing.Size(114, 17);
+            this.lnk_Forgot.TabIndex = 11;
+            this.lnk_Forgot.TabStop = true;
+            this.lnk_Forgot.Text = "Forgot password?";
+            // 
             // pnl_LoginCard
             // 
-            this.pnl_LoginCard.BackColor = System.Drawing.Color.White;
+            this.pnl_LoginCard.BackColor = System.Drawing.Color.LightGray;
             this.pnl_LoginCard.Controls.Add(this.lbl_Subtitle);
             this.pnl_LoginCard.Controls.Add(this.lbl_NoAccount);
             this.pnl_LoginCard.Controls.Add(this.lbl_Welcome);
@@ -253,11 +261,23 @@
             this.lbl_Subtitle.TabIndex = 15;
             this.lbl_Subtitle.Text = "Please login to your account";
             // 
-            // frmLogin
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(74, 330);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(277, 50);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Welcome Back";
+            // 
+            // Frm_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1084, 611);
             this.Controls.Add(this.pnl_Left);
             this.Controls.Add(this.pnl_LoginCard);
@@ -266,7 +286,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "frmLogin";
+            this.Name = "Frm_Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DaMock Hotel - Login";
             this.Load += new System.EventHandler(this.frmLogin_Load);
@@ -296,6 +316,7 @@
         private System.Windows.Forms.Label lbl_Subtitle;
         private System.Windows.Forms.Label lbl_WelcomeLeft;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 

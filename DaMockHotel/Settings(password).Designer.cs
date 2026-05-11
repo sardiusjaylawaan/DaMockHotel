@@ -312,7 +312,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Name = "Form6";
-            this.Text = "Form6";
+            this.Text = "DaMock Hotel - Settings";
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);

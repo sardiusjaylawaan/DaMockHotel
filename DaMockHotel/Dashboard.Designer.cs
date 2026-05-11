@@ -1,6 +1,6 @@
 ﻿namespace DaMockHotel
 {
-    partial class Form2
+    partial class Dashboard
     {
         /// <summary>
         /// Required designer variable.
@@ -321,7 +321,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1120, 652);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label10);
@@ -342,7 +342,7 @@
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.panel1);
             this.Name = "Form2";
-            this.Text = "DaMock Hotel -";
+            this.Text = "DaMock Hotel - Dashboard";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);

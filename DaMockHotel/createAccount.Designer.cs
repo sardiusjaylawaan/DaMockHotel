@@ -1,6 +1,6 @@
 ﻿namespace DaMockHotel
 {
-    partial class Form4
+    partial class Frm_createAccount
     {
         /// <summary>
         /// Required designer variable.
@@ -281,7 +281,7 @@
             this.btn_Submit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Submit.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Submit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_Submit.Location = new System.Drawing.Point(82, 495);
+            this.btn_Submit.Location = new System.Drawing.Point(82, 483);
             this.btn_Submit.Name = "btn_Submit";
             this.btn_Submit.Size = new System.Drawing.Size(184, 23);
             this.btn_Submit.TabIndex = 14;
@@ -298,9 +298,9 @@
             this.btn_HaveAcc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_HaveAcc.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_HaveAcc.ForeColor = System.Drawing.Color.Gray;
-            this.btn_HaveAcc.Location = new System.Drawing.Point(82, 524);
+            this.btn_HaveAcc.Location = new System.Drawing.Point(82, 512);
             this.btn_HaveAcc.Name = "btn_HaveAcc";
-            this.btn_HaveAcc.Size = new System.Drawing.Size(184, 21);
+            this.btn_HaveAcc.Size = new System.Drawing.Size(184, 26);
             this.btn_HaveAcc.TabIndex = 15;
             this.btn_HaveAcc.Text = "I already have an account";
             this.btn_HaveAcc.UseVisualStyleBackColor = false;
@@ -346,9 +346,9 @@
             this.panel1.Controls.Add(this.lbl_Gender);
             this.panel1.Controls.Add(this.cmb_Day);
             this.panel1.Controls.Add(this.cmb_Year);
-            this.panel1.Location = new System.Drawing.Point(586, 24);
+            this.panel1.Location = new System.Drawing.Point(622, 24);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(376, 555);
+            this.panel1.Size = new System.Drawing.Size(342, 555);
             this.panel1.TabIndex = 18;
             // 
             // pnl_Left
@@ -392,7 +392,7 @@
             this.lbl_WelcomeLeft.ForeColor = System.Drawing.Color.White;
             this.lbl_WelcomeLeft.Location = new System.Drawing.Point(64, 292);
             this.lbl_WelcomeLeft.Name = "lbl_WelcomeLeft";
-            this.lbl_WelcomeLeft.Size = new System.Drawing.Size(300, 35);
+            this.lbl_WelcomeLeft.Size = new System.Drawing.Size(140, 35);
             this.lbl_WelcomeLeft.TabIndex = 16;
             this.lbl_WelcomeLeft.Text = "Welcome ";
             // 
@@ -407,7 +407,7 @@
             this.label1.TabIndex = 17;
             this.label1.Text = "Create your account to manage your booking";
             // 
-            // Form4
+            // Frm_createAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -415,7 +415,7 @@
             this.ClientSize = new System.Drawing.Size(1070, 600);
             this.Controls.Add(this.pnl_Left);
             this.Controls.Add(this.panel1);
-            this.Name = "Form4";
+            this.Name = "Frm_createAccount";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DaMock Hotel - Create Account";
             this.panel1.ResumeLayout(false);

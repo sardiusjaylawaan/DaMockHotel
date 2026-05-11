@@ -1,6 +1,6 @@
 ﻿namespace DaMockHotel
 {
-    partial class Form9
+    partial class Frm_writeReviews
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form9));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_writeReviews));
             this.panel1 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -36,12 +36,12 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -130,38 +130,26 @@
             this.panel2.Size = new System.Drawing.Size(818, 538);
             this.panel2.TabIndex = 26;
             // 
-            // label1
+            // panel3
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(44)))), ((int)(((byte)(67)))));
-            this.label1.Location = new System.Drawing.Point(99, 51);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(617, 47);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Write a review, make someone\'s trip";
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(44)))), ((int)(((byte)(67)))));
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.ForeColor = System.Drawing.Color.White;
+            this.panel3.Location = new System.Drawing.Point(73, 345);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(667, 117);
+            this.panel3.TabIndex = 5;
             // 
-            // label3
+            // label4
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(123, 98);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(560, 60);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Stories like yours are what helps travelers have better trips. \r\nShare your exper" +
-    "ience and help out a fellow traveler!";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.Gray;
-            this.textBox1.Location = new System.Drawing.Point(160, 203);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(459, 26);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.Text = "What would you like to review?";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(41, 27);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(580, 63);
+            this.label4.TabIndex = 4;
+            this.label4.Text = resources.GetString("label4.Text");
+            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // button1
             // 
@@ -175,36 +163,48 @@
             this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // label4
+            // textBox1
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(41, 27);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(580, 63);
-            this.label4.TabIndex = 4;
-            this.label4.Text = resources.GetString("label4.Text");
-            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.Gray;
+            this.textBox1.Location = new System.Drawing.Point(160, 203);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(459, 26);
+            this.textBox1.TabIndex = 2;
+            this.textBox1.Text = "What would you like to review?";
             // 
-            // panel3
+            // label3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(44)))), ((int)(((byte)(67)))));
-            this.panel3.Controls.Add(this.label4);
-            this.panel3.ForeColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(73, 345);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(667, 117);
-            this.panel3.TabIndex = 5;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(123, 98);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(560, 60);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Stories like yours are what helps travelers have better trips. \r\nShare your exper" +
+    "ience and help out a fellow traveler!";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // Form9
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(44)))), ((int)(((byte)(67)))));
+            this.label1.Location = new System.Drawing.Point(99, 51);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(617, 47);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Write a review, make someone\'s trip";
+            // 
+            // Frm_writeReviews
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1120, 652);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Name = "Form9";
-            this.Text = "Form9";
+            this.Name = "Frm_writeReviews";
+            this.Text = "DaMock Hotel - Reviews";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

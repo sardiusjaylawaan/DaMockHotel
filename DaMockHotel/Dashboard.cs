@@ -11,9 +11,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace DaMockHotel
 {
-    public partial class Form2 : Form
+    public partial class Dashboard : Form
     {
-        public Form2(string username)
+        public Dashboard(string username)
         {
             InitializeComponent();
             

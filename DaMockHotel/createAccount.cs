@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DaMockHotel
 {
-    public partial class Form4 : Form
+    public partial class Frm_createAccount : Form
     {
-        public Form4()
+        public Frm_createAccount()
         {
             InitializeComponent();
         }
@@ -43,7 +43,7 @@ namespace DaMockHotel
 
         private void btnBackToLogin_Click(object sender, EventArgs e)
         {
-            frmLogin loginForm = new frmLogin();
+            Frm_Login loginForm = new Frm_Login();
             loginForm.Show();
             this.Hide(); 
         }

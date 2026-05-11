@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DaMockHotel
 {
-    public partial class frmLogin : Form
+    public partial class Frm_Login : Form
     {
-        public frmLogin()
+        public Frm_Login()
         {
             InitializeComponent();
             this.Load += frmLogin_Load;
@@ -25,7 +25,7 @@ namespace DaMockHotel
 
             if (username == "admin" && password == "1234")
             {
-                Form2 login = new Form2(username);
+                Dashboard login = new Dashboard(username);
                 login.Show();
 
                 this.Hide();
@@ -38,13 +38,13 @@ namespace DaMockHotel
 
         private void btn_CreateAcc_Click(object sender, EventArgs e)
         {
-            Form4 registerForm = new Form4();
+            Frm_createAccount registerForm = new Frm_createAccount();
             registerForm.ShowDialog();
         }
 
         private void lbl_forgotPassword_Click(object sender, EventArgs e)
         {
-            Form3 forgotPassword = new Form3(txt_Username.Text);
+            Frm_forgotPassword forgotPassword = new Frm_forgotPassword(txt_Username.Text);
             forgotPassword.Show();
         }
 
