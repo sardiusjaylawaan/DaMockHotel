@@ -15,6 +15,7 @@ namespace DaMockHotel
         public frmLogin()
         {
             InitializeComponent();
+            this.Load += frmLogin_Load;
         }
 
         private void btn_Login_Click(object sender, EventArgs e)
@@ -28,7 +29,6 @@ namespace DaMockHotel
                 login.Show();
 
                 this.Hide();
-
             }
             else
             {
@@ -40,7 +40,6 @@ namespace DaMockHotel
         {
             Form4 registerForm = new Form4();
             registerForm.ShowDialog();
-
         }
 
         private void lbl_forgotPassword_Click(object sender, EventArgs e)
@@ -48,6 +47,7 @@ namespace DaMockHotel
             Form3 forgotPassword = new Form3(txt_Username.Text);
             forgotPassword.Show();
         }
+
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
@@ -64,6 +64,71 @@ namespace DaMockHotel
         }
 
         private void frmLogin_Load(object sender, EventArgs e)
+        {
+            this.BackColor = Color.FromArgb(241, 245, 249);
+            this.Size = new Size(1100, 650);
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+
+            SetTransparentLabels(this);
+
+            btn_Login.BackColor = Color.FromArgb(37, 99, 235);
+            btn_Login.ForeColor = Color.White;
+            btn_Login.FlatStyle = FlatStyle.Flat;
+            btn_Login.FlatAppearance.BorderSize = 0;
+            btn_Login.Font = new Font("Segoe UI", 11, FontStyle.Bold);
+            btn_Login.Cursor = Cursors.Hand;
+
+            btn_CreateAcc.BackColor = Color.White;
+            btn_CreateAcc.ForeColor = Color.FromArgb(37, 99, 235);
+            btn_CreateAcc.FlatStyle = FlatStyle.Flat;
+            btn_CreateAcc.FlatAppearance.BorderSize = 1;
+            btn_CreateAcc.FlatAppearance.BorderColor = Color.FromArgb(37, 99, 235);
+            btn_CreateAcc.Font = new Font("Segoe UI", 9, FontStyle.Bold);
+            btn_CreateAcc.Cursor = Cursors.Hand;
+
+            txt_Username.Font = new Font("Segoe UI", 11);
+            txt_Username.BorderStyle = BorderStyle.FixedSingle;
+            txt_Username.BackColor = Color.White;
+
+            txt_Password.Font = new Font("Segoe UI", 11);
+            txt_Password.BorderStyle = BorderStyle.FixedSingle;
+            txt_Password.BackColor = Color.White;
+            txt_Password.UseSystemPasswordChar = true;
+
+            lnk_Forgot.ForeColor = Color.FromArgb(37, 99, 235);
+            lnk_Forgot.Font = new Font("Segoe UI", 9, FontStyle.Underline);
+            lnk_Forgot.BackColor = Color.Transparent;
+            lnk_Forgot.Cursor = Cursors.Hand;
+
+            pnl_LoginCard.Paint += (s, pe) =>
+            {
+                pe.Graphics.DrawRectangle(
+                    new Pen(Color.FromArgb(220, 220, 220)),
+                    0, 0,
+                    pnl_LoginCard.Width - 1,
+                    pnl_LoginCard.Height - 1);
+            };
+        }
+
+        private void SetTransparentLabels(Control parent)
+        {
+            foreach (Control ctrl in parent.Controls)
+            {
+                if (ctrl is Label lbl)
+                {
+                    lbl.BackColor = Color.Transparent;
+                }
+
+                if (ctrl.HasChildren)
+                {
+                    SetTransparentLabels(ctrl);
+                }
+            }
+        }
+
+        private void lbl_Tagline_Click(object sender, EventArgs e)
         {
 
         }
