@@ -37,13 +37,13 @@
             this.btn_CreateAcc = new System.Windows.Forms.Button();
             this.lbl_NoAccount = new System.Windows.Forms.Label();
             this.pnl_Left = new System.Windows.Forms.Panel();
+            this.lbl_WelcomeLeft = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lnk_Forgot = new System.Windows.Forms.LinkLabel();
             this.lbl_Tagline = new System.Windows.Forms.Label();
             this.lbl_Hotel = new System.Windows.Forms.Label();
             this.pnl_LoginCard = new System.Windows.Forms.Panel();
             this.lbl_Subtitle = new System.Windows.Forms.Label();
-            this.lbl_WelcomeLeft = new System.Windows.Forms.Label();
             this.pnl_Left.SuspendLayout();
             this.pnl_LoginCard.SuspendLayout();
             this.SuspendLayout();
@@ -124,7 +124,7 @@
             // 
             // btn_CreateAcc
             // 
-            this.btn_CreateAcc.BackColor = System.Drawing.Color.Gray;
+            this.btn_CreateAcc.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btn_CreateAcc.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_CreateAcc.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btn_CreateAcc.FlatAppearance.BorderSize = 0;
@@ -142,7 +142,7 @@
             // 
             // lbl_NoAccount
             // 
-            this.lbl_NoAccount.BackColor = System.Drawing.Color.DarkGray;
+            this.lbl_NoAccount.BackColor = System.Drawing.SystemColors.ControlLight;
             this.lbl_NoAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(100)))), ((int)(((byte)(115)))));
             this.lbl_NoAccount.Location = new System.Drawing.Point(49, 365);
             this.lbl_NoAccount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -161,6 +161,17 @@
             this.pnl_Left.Name = "pnl_Left";
             this.pnl_Left.Size = new System.Drawing.Size(480, 600);
             this.pnl_Left.TabIndex = 10;
+            // 
+            // lbl_WelcomeLeft
+            // 
+            this.lbl_WelcomeLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(44)))), ((int)(((byte)(67)))));
+            this.lbl_WelcomeLeft.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_WelcomeLeft.ForeColor = System.Drawing.Color.White;
+            this.lbl_WelcomeLeft.Location = new System.Drawing.Point(64, 292);
+            this.lbl_WelcomeLeft.Name = "lbl_WelcomeLeft";
+            this.lbl_WelcomeLeft.Size = new System.Drawing.Size(300, 35);
+            this.lbl_WelcomeLeft.TabIndex = 16;
+            this.lbl_WelcomeLeft.Text = "Welcome back";
             // 
             // label1
             // 
@@ -232,17 +243,6 @@
             this.lbl_Subtitle.Size = new System.Drawing.Size(260, 24);
             this.lbl_Subtitle.TabIndex = 15;
             this.lbl_Subtitle.Text = "Please login to your account";
-            // 
-            // lbl_WelcomeLeft
-            // 
-            this.lbl_WelcomeLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(44)))), ((int)(((byte)(67)))));
-            this.lbl_WelcomeLeft.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_WelcomeLeft.ForeColor = System.Drawing.Color.White;
-            this.lbl_WelcomeLeft.Location = new System.Drawing.Point(64, 292);
-            this.lbl_WelcomeLeft.Name = "lbl_WelcomeLeft";
-            this.lbl_WelcomeLeft.Size = new System.Drawing.Size(300, 35);
-            this.lbl_WelcomeLeft.TabIndex = 16;
-            this.lbl_WelcomeLeft.Text = "Welcome back";
             // 
             // frmLogin
             // 

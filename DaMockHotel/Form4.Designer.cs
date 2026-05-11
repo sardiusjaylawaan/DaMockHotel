@@ -47,7 +47,13 @@
             this.txt_Username = new System.Windows.Forms.TextBox();
             this.lbl_Username = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pnl_Left = new System.Windows.Forms.Panel();
+            this.lbl_Tagline = new System.Windows.Forms.Label();
+            this.lbl_Hotel = new System.Windows.Forms.Label();
+            this.lbl_WelcomeLeft = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.pnl_Left.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbl_Createnew
@@ -268,14 +274,14 @@
             // 
             // btn_Submit
             // 
-            this.btn_Submit.BackColor = System.Drawing.Color.Navy;
+            this.btn_Submit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(44)))), ((int)(((byte)(67)))));
             this.btn_Submit.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btn_Submit.FlatAppearance.BorderSize = 0;
             this.btn_Submit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btn_Submit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Submit.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Submit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_Submit.Location = new System.Drawing.Point(82, 504);
+            this.btn_Submit.Location = new System.Drawing.Point(82, 495);
             this.btn_Submit.Name = "btn_Submit";
             this.btn_Submit.Size = new System.Drawing.Size(184, 23);
             this.btn_Submit.TabIndex = 14;
@@ -292,9 +298,9 @@
             this.btn_HaveAcc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_HaveAcc.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_HaveAcc.ForeColor = System.Drawing.Color.Gray;
-            this.btn_HaveAcc.Location = new System.Drawing.Point(82, 533);
+            this.btn_HaveAcc.Location = new System.Drawing.Point(82, 524);
             this.btn_HaveAcc.Name = "btn_HaveAcc";
-            this.btn_HaveAcc.Size = new System.Drawing.Size(184, 23);
+            this.btn_HaveAcc.Size = new System.Drawing.Size(184, 21);
             this.btn_HaveAcc.TabIndex = 15;
             this.btn_HaveAcc.Text = "I already have an account";
             this.btn_HaveAcc.UseVisualStyleBackColor = false;
@@ -340,23 +346,81 @@
             this.panel1.Controls.Add(this.lbl_Gender);
             this.panel1.Controls.Add(this.cmb_Day);
             this.panel1.Controls.Add(this.cmb_Year);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Location = new System.Drawing.Point(586, 24);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(349, 587);
+            this.panel1.Size = new System.Drawing.Size(376, 555);
             this.panel1.TabIndex = 18;
+            // 
+            // pnl_Left
+            // 
+            this.pnl_Left.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(44)))), ((int)(((byte)(67)))));
+            this.pnl_Left.Controls.Add(this.lbl_Tagline);
+            this.pnl_Left.Controls.Add(this.lbl_Hotel);
+            this.pnl_Left.Controls.Add(this.lbl_WelcomeLeft);
+            this.pnl_Left.Controls.Add(this.label1);
+            this.pnl_Left.Location = new System.Drawing.Point(3, 1);
+            this.pnl_Left.Name = "pnl_Left";
+            this.pnl_Left.Size = new System.Drawing.Size(480, 600);
+            this.pnl_Left.TabIndex = 19;
+            // 
+            // lbl_Tagline
+            // 
+            this.lbl_Tagline.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(44)))), ((int)(((byte)(67)))));
+            this.lbl_Tagline.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Tagline.ForeColor = System.Drawing.Color.White;
+            this.lbl_Tagline.Location = new System.Drawing.Point(64, 213);
+            this.lbl_Tagline.Name = "lbl_Tagline";
+            this.lbl_Tagline.Size = new System.Drawing.Size(350, 30);
+            this.lbl_Tagline.TabIndex = 19;
+            this.lbl_Tagline.Text = "Simple. Comfortable. Secure.";
+            // 
+            // lbl_Hotel
+            // 
+            this.lbl_Hotel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(44)))), ((int)(((byte)(67)))));
+            this.lbl_Hotel.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Hotel.ForeColor = System.Drawing.Color.White;
+            this.lbl_Hotel.Location = new System.Drawing.Point(61, 153);
+            this.lbl_Hotel.Name = "lbl_Hotel";
+            this.lbl_Hotel.Size = new System.Drawing.Size(360, 50);
+            this.lbl_Hotel.TabIndex = 18;
+            this.lbl_Hotel.Text = "DaMock Hotel";
+            // 
+            // lbl_WelcomeLeft
+            // 
+            this.lbl_WelcomeLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(44)))), ((int)(((byte)(67)))));
+            this.lbl_WelcomeLeft.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_WelcomeLeft.ForeColor = System.Drawing.Color.White;
+            this.lbl_WelcomeLeft.Location = new System.Drawing.Point(64, 292);
+            this.lbl_WelcomeLeft.Name = "lbl_WelcomeLeft";
+            this.lbl_WelcomeLeft.Size = new System.Drawing.Size(300, 35);
+            this.lbl_WelcomeLeft.TabIndex = 16;
+            this.lbl_WelcomeLeft.Text = "Welcome ";
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(44)))), ((int)(((byte)(67)))));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(230)))), ((int)(((byte)(240)))));
+            this.label1.Location = new System.Drawing.Point(67, 327);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(340, 30);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Create your account to manage your booking";
             // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(372, 608);
+            this.ClientSize = new System.Drawing.Size(1070, 600);
+            this.Controls.Add(this.pnl_Left);
             this.Controls.Add(this.panel1);
             this.Name = "Form4";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DaMock Hotel - Create Account";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.pnl_Left.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -382,5 +446,10 @@
         private System.Windows.Forms.TextBox txt_Username;
         private System.Windows.Forms.Label lbl_Username;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnl_Left;
+        private System.Windows.Forms.Label lbl_WelcomeLeft;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_Hotel;
+        private System.Windows.Forms.Label lbl_Tagline;
     }
 }
