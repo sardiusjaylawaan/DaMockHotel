@@ -29,10 +29,12 @@
         private void InitializeComponent()
         {
             this.panel3 = new System.Windows.Forms.Panel();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -46,8 +48,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.panel3.SuspendLayout();
@@ -66,21 +66,33 @@
             this.panel3.Size = new System.Drawing.Size(802, 125);
             this.panel3.TabIndex = 29;
             // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.ForeColor = System.Drawing.Color.Gray;
+            this.textBox3.Location = new System.Drawing.Point(336, 30);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(440, 22);
+            this.textBox3.TabIndex = 3;
+            this.textBox3.Text = "Current password";
+            // 
             // textBox2
             // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.ForeColor = System.Drawing.Color.Gray;
             this.textBox2.Location = new System.Drawing.Point(561, 75);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(215, 20);
+            this.textBox2.Size = new System.Drawing.Size(215, 22);
             this.textBox2.TabIndex = 2;
             this.textBox2.Text = "Re-type new password";
             // 
             // textBox1
             // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.Gray;
             this.textBox1.Location = new System.Drawing.Point(336, 75);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(197, 20);
+            this.textBox1.Size = new System.Drawing.Size(197, 22);
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "New password";
             // 
@@ -106,6 +118,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(802, 98);
             this.panel2.TabIndex = 28;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(33, 64);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(253, 13);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "of number, letters and special characters(!$@%).";
             // 
             // button8
             // 
@@ -252,25 +274,6 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "DaMock Hotel";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(33, 64);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(253, 13);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "of number, letters and special characters(!$@%).";
-            // 
-            // textBox3
-            // 
-            this.textBox3.ForeColor = System.Drawing.Color.Gray;
-            this.textBox3.Location = new System.Drawing.Point(336, 30);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(440, 20);
-            this.textBox3.TabIndex = 3;
-            this.textBox3.Text = "Current password";
-            // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
@@ -287,9 +290,10 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.Location = new System.Drawing.Point(248, 477);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(372, 17);
+            this.checkBox1.Size = new System.Drawing.Size(457, 20);
             this.checkBox1.TabIndex = 31;
             this.checkBox1.Text = "Log out of other devices. Choose this if someone else used your account.";
             this.checkBox1.UseVisualStyleBackColor = true;

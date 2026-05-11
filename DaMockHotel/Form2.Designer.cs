@@ -132,9 +132,10 @@
             // maskedTextBox1
             // 
             this.maskedTextBox1.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.maskedTextBox1.Location = new System.Drawing.Point(724, 28);
+            this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maskedTextBox1.Location = new System.Drawing.Point(732, 24);
             this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(205, 20);
+            this.maskedTextBox1.Size = new System.Drawing.Size(205, 24);
             this.maskedTextBox1.TabIndex = 2;
             this.maskedTextBox1.Text = "Search";
             // 
