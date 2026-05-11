@@ -1,6 +1,6 @@
 ﻿namespace DaMockHotel
 {
-    partial class Form6
+    partial class Frm_passwordSettings
     {
         /// <summary>
         /// Required designer variable.
@@ -298,7 +298,7 @@
             this.checkBox1.Text = "Log out of other devices. Choose this if someone else used your account.";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // Form6
+            // Frm_passwordSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -311,7 +311,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
-            this.Name = "Form6";
+            this.Name = "Frm_passwordSettings";
             this.Text = "DaMock Hotel - Settings";
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();

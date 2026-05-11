@@ -1,6 +1,6 @@
 ﻿namespace DaMockHotel
 {
-    partial class Bookings
+    partial class Frm_Bookings
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Bookings));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Bookings));
             this.panel1 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -281,7 +281,7 @@
             this.button7.Text = "Profile";
             this.button7.UseVisualStyleBackColor = false;
             // 
-            // Form7
+            // Frm_Bookings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -296,7 +296,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
-            this.Name = "Form7";
+            this.Name = "Frm_Bookings";
             this.Text = "DaMock Hotel - Bookings";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

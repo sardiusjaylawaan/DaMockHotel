@@ -1,6 +1,6 @@
 ﻿namespace DaMockHotel
 {
-    partial class Form5
+    partial class Frm_profileSettings
     {
         /// <summary>
         /// Required designer variable.
@@ -509,7 +509,7 @@
             this.label7.TabIndex = 4;
             this.label7.Text = "Country";
             // 
-            // Form5
+            // Frm_profileSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -522,7 +522,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
-            this.Name = "Form5";
+            this.Name = "Frm_profileSettings";
             this.Text = "DaMock Hotel - Settings";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

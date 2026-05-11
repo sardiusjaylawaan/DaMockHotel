@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DaMockHotel
 {
-    public partial class Bookings : Form
+    public partial class Frm_Bookings : Form
     {
-        public Bookings()
+        public Frm_Bookings()
         {
             InitializeComponent();
         }

@@ -33,5 +33,12 @@ namespace DaMockHotel
         {
 
         }
+
+        private void btn_bookings_Click(object sender, EventArgs e)
+        {
+            Frm_Bookings bookings = new Frm_Bookings();
+            bookings.Show();
+            this.Close();
+        }
     }
 }
