@@ -32,7 +32,7 @@ namespace DaMockHotel
                 return;
             }
 
-            if (string.IsNullOrEmpty(firstName) || string.IsNullOrEmpty(email))
+            if (string.IsNullOrWhiteSpace(firstName) || string.IsNullOrWhiteSpace(email))
             {
                 MessageBox.Show("Please fill in all required fields.");
                 return;
@@ -42,33 +42,39 @@ namespace DaMockHotel
 
             SqlConnection conn = new SqlConnection(connString);
 
-            string query = "INSERT INTO Users (Username, Password, Role) VALUES (@user, @pass, @role)";
+            string query = "INSERT INTO Users (Username, Password, Role, Email) VALUES (@user, @pass, @role, @email)";
 
             SqlCommand cmd = new SqlCommand(query, conn);
 
             cmd.Parameters.AddWithValue("@user", username);
             cmd.Parameters.AddWithValue("@pass", password);
             cmd.Parameters.AddWithValue("@role", "Staff");
+            cmd.Parameters.AddWithValue("@email", email);
 
-            conn.Open();
+            try
+            {
+                conn.Open();
+                cmd.ExecuteNonQuery();
+                conn.Close();
 
-            cmd.ExecuteNonQuery();
+                MessageBox.Show($"Account created for {firstName} {lastName}!");
 
-            conn.Close();
+                Frm_Login loginForm = new Frm_Login();
+                loginForm.Show();
 
-            MessageBox.Show($"Account created for {firstName} {lastName}!");
-
-            Frm_Login loginForm = new Frm_Login();
-            loginForm.Show();
-
-            this.Hide();
+                this.Hide();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
 
         private void btnBackToLogin_Click(object sender, EventArgs e)
         {
             Frm_Login loginForm = new Frm_Login();
             loginForm.Show();
-            this.Hide(); 
+            this.Hide();
         }
 
         private void Frm_createAccount_FormClosed(object sender, FormClosedEventArgs e)

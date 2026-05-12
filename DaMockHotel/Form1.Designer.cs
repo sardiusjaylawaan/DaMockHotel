@@ -37,10 +37,10 @@
             this.pnl_LoginCard = new System.Windows.Forms.Panel();
             this.lbl_Subtitle = new System.Windows.Forms.Label();
             this.lbl_Welcome = new System.Windows.Forms.Label();
-            this.txtUsername = new System.Windows.Forms.TextBox();
-            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txt_NewPassword = new System.Windows.Forms.TextBox();
+            this.txt_ConfirmNewPassword = new System.Windows.Forms.TextBox();
             this.lbl_newPassword = new System.Windows.Forms.Label();
-            this.btn_Login = new System.Windows.Forms.Button();
+            this.btn_ConfirmNewPassword = new System.Windows.Forms.Button();
             this.lbl_Password = new System.Windows.Forms.Label();
             this.pnl_Left.SuspendLayout();
             this.pnl_LoginCard.SuspendLayout();
@@ -118,10 +118,10 @@
             this.pnl_LoginCard.BackColor = System.Drawing.Color.LightGray;
             this.pnl_LoginCard.Controls.Add(this.lbl_Subtitle);
             this.pnl_LoginCard.Controls.Add(this.lbl_Welcome);
-            this.pnl_LoginCard.Controls.Add(this.txtUsername);
-            this.pnl_LoginCard.Controls.Add(this.txtPassword);
+            this.pnl_LoginCard.Controls.Add(this.txt_NewPassword);
+            this.pnl_LoginCard.Controls.Add(this.txt_ConfirmNewPassword);
             this.pnl_LoginCard.Controls.Add(this.lbl_newPassword);
-            this.pnl_LoginCard.Controls.Add(this.btn_Login);
+            this.pnl_LoginCard.Controls.Add(this.btn_ConfirmNewPassword);
             this.pnl_LoginCard.Controls.Add(this.lbl_Password);
             this.pnl_LoginCard.Location = new System.Drawing.Point(599, 106);
             this.pnl_LoginCard.Name = "pnl_LoginCard";
@@ -152,28 +152,28 @@
             this.lbl_Welcome.TabIndex = 2;
             this.lbl_Welcome.Text = "Welcome Back";
             // 
-            // txtUsername
+            // txt_NewPassword
             // 
-            this.txtUsername.BackColor = System.Drawing.Color.White;
-            this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
-            this.txtUsername.Location = new System.Drawing.Point(47, 145);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(4);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(270, 27);
-            this.txtUsername.TabIndex = 0;
+            this.txt_NewPassword.BackColor = System.Drawing.Color.White;
+            this.txt_NewPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_NewPassword.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_NewPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
+            this.txt_NewPassword.Location = new System.Drawing.Point(47, 145);
+            this.txt_NewPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_NewPassword.Name = "txt_NewPassword";
+            this.txt_NewPassword.Size = new System.Drawing.Size(270, 27);
+            this.txt_NewPassword.TabIndex = 0;
             // 
-            // txtPassword
+            // txt_ConfirmNewPassword
             // 
-            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(47, 225);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(270, 27);
-            this.txtPassword.TabIndex = 1;
-            this.txtPassword.UseSystemPasswordChar = true;
+            this.txt_ConfirmNewPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_ConfirmNewPassword.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_ConfirmNewPassword.Location = new System.Drawing.Point(47, 225);
+            this.txt_ConfirmNewPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_ConfirmNewPassword.Name = "txt_ConfirmNewPassword";
+            this.txt_ConfirmNewPassword.Size = new System.Drawing.Size(270, 27);
+            this.txt_ConfirmNewPassword.TabIndex = 1;
+            this.txt_ConfirmNewPassword.UseSystemPasswordChar = true;
             // 
             // lbl_newPassword
             // 
@@ -188,23 +188,24 @@
             this.lbl_newPassword.TabIndex = 4;
             this.lbl_newPassword.Text = "New Password";
             // 
-            // btn_Login
+            // btn_ConfirmNewPassword
             // 
-            this.btn_Login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(44)))), ((int)(((byte)(67)))));
-            this.btn_Login.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Login.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btn_Login.FlatAppearance.BorderSize = 0;
-            this.btn_Login.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(78)))), ((int)(((byte)(216)))));
-            this.btn_Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Login.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Login.ForeColor = System.Drawing.Color.White;
-            this.btn_Login.Location = new System.Drawing.Point(47, 295);
-            this.btn_Login.Margin = new System.Windows.Forms.Padding(0);
-            this.btn_Login.Name = "btn_Login";
-            this.btn_Login.Size = new System.Drawing.Size(270, 42);
-            this.btn_Login.TabIndex = 3;
-            this.btn_Login.Text = "Confirm";
-            this.btn_Login.UseVisualStyleBackColor = false;
+            this.btn_ConfirmNewPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(44)))), ((int)(((byte)(67)))));
+            this.btn_ConfirmNewPassword.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_ConfirmNewPassword.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_ConfirmNewPassword.FlatAppearance.BorderSize = 0;
+            this.btn_ConfirmNewPassword.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(78)))), ((int)(((byte)(216)))));
+            this.btn_ConfirmNewPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ConfirmNewPassword.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ConfirmNewPassword.ForeColor = System.Drawing.Color.White;
+            this.btn_ConfirmNewPassword.Location = new System.Drawing.Point(47, 295);
+            this.btn_ConfirmNewPassword.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_ConfirmNewPassword.Name = "btn_ConfirmNewPassword";
+            this.btn_ConfirmNewPassword.Size = new System.Drawing.Size(270, 42);
+            this.btn_ConfirmNewPassword.TabIndex = 3;
+            this.btn_ConfirmNewPassword.Text = "Confirm";
+            this.btn_ConfirmNewPassword.UseVisualStyleBackColor = false;
+            this.btn_ConfirmNewPassword.Click += new System.EventHandler(this.btn_ConfirmNewPassword_Click);
             // 
             // lbl_Password
             // 
@@ -248,10 +249,10 @@
         private System.Windows.Forms.Panel pnl_LoginCard;
         private System.Windows.Forms.Label lbl_Subtitle;
         private System.Windows.Forms.Label lbl_Welcome;
-        private System.Windows.Forms.TextBox txtUsername;
-        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.TextBox txt_NewPassword;
+        private System.Windows.Forms.TextBox txt_ConfirmNewPassword;
         private System.Windows.Forms.Label lbl_newPassword;
-        private System.Windows.Forms.Button btn_Login;
+        private System.Windows.Forms.Button btn_ConfirmNewPassword;
         private System.Windows.Forms.Label lbl_Password;
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace DaMockHotel
 {
@@ -15,7 +16,6 @@ namespace DaMockHotel
         public Frm_forgotPassword(string username)
         {
             InitializeComponent();
-
         }
 
         private void Form3_Load(object sender, EventArgs e)
@@ -39,7 +39,35 @@ namespace DaMockHotel
                     throw new Exception("Email cannot be empty.");
                 }
 
-                MessageBox.Show($"Password reset link has been sent to {email}");
+                string connString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=DaMockHotelDB;Integrated Security=True";
+
+                SqlConnection conn = new SqlConnection(connString);
+
+                string query = "SELECT COUNT(*) FROM Users WHERE Email=@email";
+
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@email", email);
+
+                conn.Open();
+
+                int count = (int)cmd.ExecuteScalar();
+
+                conn.Close();
+
+                if (count > 0)
+                {
+                    MessageBox.Show("Email found! You can now reset your password.");
+
+                    Frm_newPassword reset = new Frm_newPassword(email);
+                    reset.Show();
+
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Email not found in our system.");
+                }
+
                 txt_forgotEmail.Clear();
             }
             catch (Exception ex)
@@ -49,7 +77,6 @@ namespace DaMockHotel
                     MessageBoxIcon.Warning);
 
                 txt_forgotEmail.Focus();
-                
             }
         }
 
