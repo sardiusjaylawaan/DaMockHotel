@@ -39,7 +39,7 @@ namespace DaMockHotel
 
             if (count > 0)
             {
-                Dashboard login = new Dashboard(txtUsername.Text);
+                Frm_Dashboard login = new Frm_Dashboard(txtUsername.Text);
                 login.Show();
 
                 this.Hide();

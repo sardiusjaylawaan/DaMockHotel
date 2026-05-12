@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_settings = new System.Windows.Forms.Button();
+            this.btn_reviews = new System.Windows.Forms.Button();
+            this.btn_bookings = new System.Windows.Forms.Button();
+            this.btn_dashboard = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
@@ -69,59 +69,62 @@
             this.panel1.AutoSize = true;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(44)))), ((int)(((byte)(67)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.btn_settings);
+            this.panel1.Controls.Add(this.btn_reviews);
+            this.panel1.Controls.Add(this.btn_bookings);
+            this.panel1.Controls.Add(this.btn_dashboard);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(170, 653);
             this.panel1.TabIndex = 24;
             // 
-            // button5
+            // btn_settings
             // 
-            this.button5.BackColor = System.Drawing.Color.Silver;
-            this.button5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(21, 348);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(113, 40);
-            this.button5.TabIndex = 17;
-            this.button5.Text = "Settings";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btn_settings.BackColor = System.Drawing.Color.Silver;
+            this.btn_settings.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_settings.Location = new System.Drawing.Point(21, 348);
+            this.btn_settings.Name = "btn_settings";
+            this.btn_settings.Size = new System.Drawing.Size(113, 40);
+            this.btn_settings.TabIndex = 17;
+            this.btn_settings.Text = "Settings";
+            this.btn_settings.UseVisualStyleBackColor = false;
+            this.btn_settings.Click += new System.EventHandler(this.btn_settings_Click);
             // 
-            // button4
+            // btn_reviews
             // 
-            this.button4.BackColor = System.Drawing.Color.White;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(21, 264);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(113, 40);
-            this.button4.TabIndex = 17;
-            this.button4.Text = "Reviews";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btn_reviews.BackColor = System.Drawing.Color.White;
+            this.btn_reviews.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_reviews.Location = new System.Drawing.Point(21, 264);
+            this.btn_reviews.Name = "btn_reviews";
+            this.btn_reviews.Size = new System.Drawing.Size(113, 40);
+            this.btn_reviews.TabIndex = 17;
+            this.btn_reviews.Text = "Reviews";
+            this.btn_reviews.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btn_bookings
             // 
-            this.button3.BackColor = System.Drawing.Color.Silver;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(21, 180);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(113, 40);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Bookings";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btn_bookings.BackColor = System.Drawing.Color.Silver;
+            this.btn_bookings.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_bookings.Location = new System.Drawing.Point(21, 180);
+            this.btn_bookings.Name = "btn_bookings";
+            this.btn_bookings.Size = new System.Drawing.Size(113, 40);
+            this.btn_bookings.TabIndex = 2;
+            this.btn_bookings.Text = "Bookings";
+            this.btn_bookings.UseVisualStyleBackColor = false;
+            this.btn_bookings.Click += new System.EventHandler(this.btn_bookings_Click);
             // 
-            // button2
+            // btn_dashboard
             // 
-            this.button2.BackColor = System.Drawing.Color.Silver;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(21, 99);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(113, 40);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Dashboard";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btn_dashboard.BackColor = System.Drawing.Color.Silver;
+            this.btn_dashboard.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_dashboard.Location = new System.Drawing.Point(21, 99);
+            this.btn_dashboard.Name = "btn_dashboard";
+            this.btn_dashboard.Size = new System.Drawing.Size(113, 40);
+            this.btn_dashboard.TabIndex = 1;
+            this.btn_dashboard.Text = "Dashboard";
+            this.btn_dashboard.UseVisualStyleBackColor = false;
+            this.btn_dashboard.Click += new System.EventHandler(this.btn_dashboard_Click);
             // 
             // label2
             // 
@@ -404,10 +407,10 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_settings;
+        private System.Windows.Forms.Button btn_reviews;
+        private System.Windows.Forms.Button btn_bookings;
+        private System.Windows.Forms.Button btn_dashboard;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;

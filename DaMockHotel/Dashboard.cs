@@ -11,9 +11,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace DaMockHotel
 {
-    public partial class Dashboard : Form
+    public partial class Frm_Dashboard : Form
     {
-        public Dashboard(string username)
+        public Frm_Dashboard()
         {
             InitializeComponent();
             
@@ -38,6 +38,20 @@ namespace DaMockHotel
         {
             Frm_Bookings bookings = new Frm_Bookings();
             bookings.Show();
+            this.Close();
+        }
+
+        private void btn_settings_Click(object sender, EventArgs e)
+        {
+            Frm_profileSettings settings = new Frm_profileSettings();
+            settings.Show();
+            this.Close();
+        }
+
+        private void btn_reviews_Click(object sender, EventArgs e)
+        {
+            Frm_readReviews reviews = new Frm_readReviews();
+            reviews.Show();
             this.Close();
         }
     }

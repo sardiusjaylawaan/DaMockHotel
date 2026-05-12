@@ -1,6 +1,6 @@
 ﻿namespace DaMockHotel
 {
-    partial class Dashboard
+    partial class Frm_Dashboard
     {
         /// <summary>
         /// Required designer variable.
@@ -53,7 +53,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_profile = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -84,6 +84,7 @@
             this.btn_settings.TabIndex = 17;
             this.btn_settings.Text = "Settings";
             this.btn_settings.UseVisualStyleBackColor = false;
+            this.btn_settings.Click += new System.EventHandler(this.btn_settings_Click);
             // 
             // btn_reviews
             // 
@@ -95,6 +96,7 @@
             this.btn_reviews.TabIndex = 17;
             this.btn_reviews.Text = "Reviews";
             this.btn_reviews.UseVisualStyleBackColor = false;
+            this.btn_reviews.Click += new System.EventHandler(this.btn_reviews_Click);
             // 
             // btn_bookings
             // 
@@ -306,25 +308,25 @@
             this.label10.TabIndex = 18;
             this.label10.Text = "Don\'t forget to control the activity that exist";
             // 
-            // button1
+            // btn_profile
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(96)))), ((int)(((byte)(210)))));
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(952, 22);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 31);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "Profile";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_profile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(96)))), ((int)(((byte)(210)))));
+            this.btn_profile.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_profile.ForeColor = System.Drawing.Color.White;
+            this.btn_profile.Location = new System.Drawing.Point(952, 22);
+            this.btn_profile.Name = "btn_profile";
+            this.btn_profile.Size = new System.Drawing.Size(112, 31);
+            this.btn_profile.TabIndex = 19;
+            this.btn_profile.Text = "Profile";
+            this.btn_profile.UseVisualStyleBackColor = false;
             // 
-            // Dashboard
+            // Frm_Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1120, 652);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_profile);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label1);
@@ -342,7 +344,7 @@
             this.Controls.Add(this.progressBar2);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.panel1);
-            this.Name = "Dashboard";
+            this.Name = "Frm_Dashboard";
             this.Text = "DaMock Hotel - Dashboard";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -382,6 +384,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_profile;
     }
 }
