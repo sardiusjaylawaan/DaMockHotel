@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace DaMockHotel
@@ -19,12 +20,26 @@ namespace DaMockHotel
 
         private void btn_Login_Click(object sender, EventArgs e)
         {
-            string username = txt_Username.Text;
-            string password = txt_Password.Text;
+            string connString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=DaMockHotelDB;Integrated Security=True";
 
-            if (username == "admin" && password == "1234")
+            SqlConnection conn = new SqlConnection(connString);
+
+            string query = "SELECT COUNT(*) FROM Users WHERE Username=@user AND Password=@pass";
+
+            SqlCommand cmd = new SqlCommand(query, conn);
+
+            cmd.Parameters.AddWithValue("@user", txtUsername.Text);
+            cmd.Parameters.AddWithValue("@pass", txtPassword.Text);
+
+            conn.Open();
+
+            int count = (int)cmd.ExecuteScalar();
+
+            conn.Close();
+
+            if (count > 0)
             {
-                Dashboard login = new Dashboard(username);
+                Dashboard login = new Dashboard(txtUsername.Text);
                 login.Show();
 
                 this.Hide();
@@ -45,7 +60,7 @@ namespace DaMockHotel
 
         private void lbl_forgotPassword_Click(object sender, EventArgs e)
         {
-            Frm_forgotPassword forgotPassword = new Frm_forgotPassword(txt_Username.Text);
+            Frm_forgotPassword forgotPassword = new Frm_forgotPassword(txtUsername.Text);
             this.Hide();
             forgotPassword.Show();
 
@@ -91,14 +106,14 @@ namespace DaMockHotel
             btn_CreateAcc.Font = new Font("Segoe UI", 9, FontStyle.Bold);
             btn_CreateAcc.Cursor = Cursors.Hand;
 
-            txt_Username.Font = new Font("Segoe UI", 11);
-            txt_Username.BorderStyle = BorderStyle.FixedSingle;
-            txt_Username.BackColor = Color.White;
+            txtUsername.Font = new Font("Segoe UI", 11);
+            txtUsername.BorderStyle = BorderStyle.FixedSingle;
+            txtUsername.BackColor = Color.White;
 
-            txt_Password.Font = new Font("Segoe UI", 11);
-            txt_Password.BorderStyle = BorderStyle.FixedSingle;
-            txt_Password.BackColor = Color.White;
-            txt_Password.UseSystemPasswordChar = true;
+            txtPassword.Font = new Font("Segoe UI", 11);
+            txtPassword.BorderStyle = BorderStyle.FixedSingle;
+            txtPassword.BackColor = Color.White;
+            txtPassword.UseSystemPasswordChar = true;
 
             lnk_Forgot.ForeColor = Color.FromArgb(37, 99, 235);
             lnk_Forgot.Font = new Font("Segoe UI", 9, FontStyle.Underline);
@@ -133,7 +148,7 @@ namespace DaMockHotel
 
         private void lnk_Forgot_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Frm_forgotPassword forgotPassword = new Frm_forgotPassword(txt_Username.Text);
+            Frm_forgotPassword forgotPassword = new Frm_forgotPassword(txtUsername.Text);
             forgotPassword.Show();
             this.Hide();
         }
@@ -141,6 +156,11 @@ namespace DaMockHotel
         private void Frm_Login_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

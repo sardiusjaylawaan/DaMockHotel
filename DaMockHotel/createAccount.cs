@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -31,16 +32,35 @@ namespace DaMockHotel
                 return;
             }
 
-                if (string.IsNullOrEmpty(firstName) || string.IsNullOrEmpty(email))
+            if (string.IsNullOrEmpty(firstName) || string.IsNullOrEmpty(email))
             {
                 MessageBox.Show("Please fill in all required fields.");
                 return;
             }
 
-            
+            string connString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=DaMockHotelDB;Integrated Security=True";
+
+            SqlConnection conn = new SqlConnection(connString);
+
+            string query = "INSERT INTO Users (Username, Password, Role) VALUES (@user, @pass, @role)";
+
+            SqlCommand cmd = new SqlCommand(query, conn);
+
+            cmd.Parameters.AddWithValue("@user", username);
+            cmd.Parameters.AddWithValue("@pass", password);
+            cmd.Parameters.AddWithValue("@role", "Staff");
+
+            conn.Open();
+
+            cmd.ExecuteNonQuery();
+
+            conn.Close();
+
             MessageBox.Show($"Account created for {firstName} {lastName}!");
+
             Frm_Login loginForm = new Frm_Login();
             loginForm.Show();
+
             this.Hide();
         }
 
