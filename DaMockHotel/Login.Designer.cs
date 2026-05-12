@@ -37,14 +37,14 @@
             this.btn_CreateAcc = new System.Windows.Forms.Button();
             this.lbl_NoAccount = new System.Windows.Forms.Label();
             this.pnl_Left = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbl_welcomeBack = new System.Windows.Forms.Label();
             this.lbl_Hotel = new System.Windows.Forms.Label();
             this.lbl_WelcomeLeft = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lnk_Forgot = new System.Windows.Forms.LinkLabel();
             this.pnl_LoginCard = new System.Windows.Forms.Panel();
             this.lbl_Subtitle = new System.Windows.Forms.Label();
+            this.lbl_Tagline = new System.Windows.Forms.Label();
             this.pnl_Left.SuspendLayout();
             this.pnl_LoginCard.SuspendLayout();
             this.SuspendLayout();
@@ -164,9 +164,9 @@
             // 
             // pnl_Left
             // 
-            this.pnl_Left.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
-            this.pnl_Left.Controls.Add(this.label3);
-            this.pnl_Left.Controls.Add(this.label2);
+            this.pnl_Left.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(44)))), ((int)(((byte)(67)))));
+            this.pnl_Left.Controls.Add(this.lbl_Tagline);
+            this.pnl_Left.Controls.Add(this.lbl_welcomeBack);
             this.pnl_Left.Controls.Add(this.lbl_Hotel);
             this.pnl_Left.Controls.Add(this.lbl_WelcomeLeft);
             this.pnl_Left.Controls.Add(this.label1);
@@ -176,30 +176,18 @@
             this.pnl_Left.Size = new System.Drawing.Size(490, 650);
             this.pnl_Left.TabIndex = 10;
             // 
-            // label3
+            // lbl_welcomeBack
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(104, 280);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(272, 50);
-            this.label3.TabIndex = 19;
-            this.label3.Text = "DaMock Hotel";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(99, 330);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(277, 50);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "Welcome Back";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.lbl_welcomeBack.AutoSize = true;
+            this.lbl_welcomeBack.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_welcomeBack.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_welcomeBack.ForeColor = System.Drawing.Color.White;
+            this.lbl_welcomeBack.Location = new System.Drawing.Point(57, 315);
+            this.lbl_welcomeBack.Name = "lbl_welcomeBack";
+            this.lbl_welcomeBack.Size = new System.Drawing.Size(277, 50);
+            this.lbl_welcomeBack.TabIndex = 18;
+            this.lbl_welcomeBack.Text = "Welcome Back";
+            this.lbl_welcomeBack.Click += new System.EventHandler(this.label2_Click);
             // 
             // lbl_Hotel
             // 
@@ -207,7 +195,7 @@
             this.lbl_Hotel.BackColor = System.Drawing.Color.Transparent;
             this.lbl_Hotel.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Hotel.ForeColor = System.Drawing.Color.White;
-            this.lbl_Hotel.Location = new System.Drawing.Point(104, 179);
+            this.lbl_Hotel.Location = new System.Drawing.Point(62, 155);
             this.lbl_Hotel.Name = "lbl_Hotel";
             this.lbl_Hotel.Size = new System.Drawing.Size(272, 50);
             this.lbl_Hotel.TabIndex = 13;
@@ -225,7 +213,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(213)))), ((int)(((byte)(225)))));
-            this.label1.Location = new System.Drawing.Point(144, 380);
+            this.label1.Location = new System.Drawing.Point(68, 380);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(199, 17);
             this.label1.TabIndex = 17;
@@ -274,6 +262,17 @@
             this.lbl_Subtitle.TabIndex = 15;
             this.lbl_Subtitle.Text = "Please login to your account";
             // 
+            // lbl_Tagline
+            // 
+            this.lbl_Tagline.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(44)))), ((int)(((byte)(67)))));
+            this.lbl_Tagline.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Tagline.ForeColor = System.Drawing.Color.White;
+            this.lbl_Tagline.Location = new System.Drawing.Point(65, 222);
+            this.lbl_Tagline.Name = "lbl_Tagline";
+            this.lbl_Tagline.Size = new System.Drawing.Size(350, 30);
+            this.lbl_Tagline.TabIndex = 20;
+            this.lbl_Tagline.Text = "Simple. Comfortable. Secure.";
+            // 
             // Frm_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -317,8 +316,8 @@
         private System.Windows.Forms.Label lbl_Subtitle;
         private System.Windows.Forms.Label lbl_WelcomeLeft;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbl_welcomeBack;
+        private System.Windows.Forms.Label lbl_Tagline;
     }
 }
 

@@ -428,11 +428,11 @@
             // lbl_WelcomeLeft
             // 
             this.lbl_WelcomeLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(44)))), ((int)(((byte)(67)))));
-            this.lbl_WelcomeLeft.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_WelcomeLeft.Font = new System.Drawing.Font("Segoe UI", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_WelcomeLeft.ForeColor = System.Drawing.Color.White;
-            this.lbl_WelcomeLeft.Location = new System.Drawing.Point(64, 292);
+            this.lbl_WelcomeLeft.Location = new System.Drawing.Point(62, 325);
             this.lbl_WelcomeLeft.Name = "lbl_WelcomeLeft";
-            this.lbl_WelcomeLeft.Size = new System.Drawing.Size(140, 35);
+            this.lbl_WelcomeLeft.Size = new System.Drawing.Size(181, 54);
             this.lbl_WelcomeLeft.TabIndex = 16;
             this.lbl_WelcomeLeft.Text = "Welcome ";
             // 
@@ -441,7 +441,7 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(44)))), ((int)(((byte)(67)))));
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(230)))), ((int)(((byte)(240)))));
-            this.label1.Location = new System.Drawing.Point(67, 327);
+            this.label1.Location = new System.Drawing.Point(65, 383);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(340, 30);
             this.label1.TabIndex = 17;
