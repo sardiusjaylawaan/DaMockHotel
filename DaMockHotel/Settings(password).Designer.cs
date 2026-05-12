@@ -29,27 +29,26 @@
         private void InitializeComponent()
         {
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.txt_currentPassword = new System.Windows.Forms.TextBox();
+            this.txt_confirmNewPassword = new System.Windows.Forms.TextBox();
+            this.txt_newPassword = new System.Windows.Forms.TextBox();
+            this.lbl_password = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.lbl_passw = new System.Windows.Forms.Label();
+            this.btn_save = new System.Windows.Forms.Button();
+            this.btn_cancel = new System.Windows.Forms.Button();
+            this.lbl_pass = new System.Windows.Forms.Label();
+            this.lbl_changePassword = new System.Windows.Forms.Label();
+            this.btn_password = new System.Windows.Forms.Button();
+            this.btn_profile = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_settings = new System.Windows.Forms.Button();
+            this.btn_reviews = new System.Windows.Forms.Button();
+            this.btn_bookings = new System.Windows.Forms.Button();
+            this.btn_dashboard = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.chckB_logout = new System.Windows.Forms.CheckBox();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -57,142 +56,143 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.textBox3);
-            this.panel3.Controls.Add(this.textBox2);
-            this.panel3.Controls.Add(this.textBox1);
-            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.txt_currentPassword);
+            this.panel3.Controls.Add(this.txt_confirmNewPassword);
+            this.panel3.Controls.Add(this.txt_newPassword);
+            this.panel3.Controls.Add(this.lbl_password);
             this.panel3.Location = new System.Drawing.Point(244, 296);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(802, 125);
             this.panel3.TabIndex = 29;
             // 
-            // textBox3
+            // txt_currentPassword
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.Gray;
-            this.textBox3.Location = new System.Drawing.Point(336, 30);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(440, 22);
-            this.textBox3.TabIndex = 3;
-            this.textBox3.Text = "Current password";
+            this.txt_currentPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_currentPassword.ForeColor = System.Drawing.Color.Gray;
+            this.txt_currentPassword.Location = new System.Drawing.Point(336, 30);
+            this.txt_currentPassword.Name = "txt_currentPassword";
+            this.txt_currentPassword.Size = new System.Drawing.Size(440, 22);
+            this.txt_currentPassword.TabIndex = 3;
+            this.txt_currentPassword.Text = "Current password";
             // 
-            // textBox2
+            // txt_confirmNewPassword
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.Gray;
-            this.textBox2.Location = new System.Drawing.Point(561, 75);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(215, 22);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.Text = "Re-type new password";
+            this.txt_confirmNewPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_confirmNewPassword.ForeColor = System.Drawing.Color.Gray;
+            this.txt_confirmNewPassword.Location = new System.Drawing.Point(561, 75);
+            this.txt_confirmNewPassword.Name = "txt_confirmNewPassword";
+            this.txt_confirmNewPassword.Size = new System.Drawing.Size(215, 22);
+            this.txt_confirmNewPassword.TabIndex = 2;
+            this.txt_confirmNewPassword.Text = "Re-type new password";
             // 
-            // textBox1
+            // txt_newPassword
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.Gray;
-            this.textBox1.Location = new System.Drawing.Point(336, 75);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(197, 22);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "New password";
+            this.txt_newPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_newPassword.ForeColor = System.Drawing.Color.Gray;
+            this.txt_newPassword.Location = new System.Drawing.Point(336, 75);
+            this.txt_newPassword.Name = "txt_newPassword";
+            this.txt_newPassword.Size = new System.Drawing.Size(197, 22);
+            this.txt_newPassword.TabIndex = 1;
+            this.txt_newPassword.Text = "New password";
             // 
-            // label5
+            // lbl_password
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(33, 55);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(82, 21);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Password";
+            this.lbl_password.AutoSize = true;
+            this.lbl_password.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_password.Location = new System.Drawing.Point(33, 55);
+            this.lbl_password.Name = "lbl_password";
+            this.lbl_password.Size = new System.Drawing.Size(82, 21);
+            this.lbl_password.TabIndex = 0;
+            this.lbl_password.Text = "Password";
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.button8);
-            this.panel2.Controls.Add(this.button7);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.lbl_passw);
+            this.panel2.Controls.Add(this.btn_save);
+            this.panel2.Controls.Add(this.btn_cancel);
+            this.panel2.Controls.Add(this.lbl_pass);
+            this.panel2.Controls.Add(this.lbl_changePassword);
             this.panel2.Location = new System.Drawing.Point(244, 183);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(802, 98);
             this.panel2.TabIndex = 28;
             // 
-            // label6
+            // lbl_passw
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(33, 64);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(253, 13);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "of number, letters and special characters(!$@%).";
+            this.lbl_passw.AutoSize = true;
+            this.lbl_passw.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_passw.Location = new System.Drawing.Point(22, 64);
+            this.lbl_passw.Name = "lbl_passw";
+            this.lbl_passw.Size = new System.Drawing.Size(253, 13);
+            this.lbl_passw.TabIndex = 4;
+            this.lbl_passw.Text = "of number, letters and special characters(!$@%).";
             // 
-            // button8
+            // btn_save
             // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(96)))), ((int)(((byte)(210)))));
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(655, 31);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(121, 33);
-            this.button8.TabIndex = 3;
-            this.button8.Text = "Save Changes";
-            this.button8.UseVisualStyleBackColor = false;
+            this.btn_save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(96)))), ((int)(((byte)(210)))));
+            this.btn_save.ForeColor = System.Drawing.Color.White;
+            this.btn_save.Location = new System.Drawing.Point(655, 31);
+            this.btn_save.Name = "btn_save";
+            this.btn_save.Size = new System.Drawing.Size(121, 33);
+            this.btn_save.TabIndex = 3;
+            this.btn_save.Text = "Save Changes";
+            this.btn_save.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // btn_cancel
             // 
-            this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(96)))), ((int)(((byte)(210)))));
-            this.button7.Location = new System.Drawing.Point(561, 35);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(88, 25);
-            this.button7.TabIndex = 2;
-            this.button7.Text = "Cancel";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btn_cancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(96)))), ((int)(((byte)(210)))));
+            this.btn_cancel.Location = new System.Drawing.Point(561, 35);
+            this.btn_cancel.Name = "btn_cancel";
+            this.btn_cancel.Size = new System.Drawing.Size(88, 25);
+            this.btn_cancel.TabIndex = 2;
+            this.btn_cancel.Text = "Cancel";
+            this.btn_cancel.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // lbl_pass
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(33, 51);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(410, 13);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Your password must be at least 6 characters and should include a combination";
+            this.lbl_pass.AutoSize = true;
+            this.lbl_pass.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_pass.Location = new System.Drawing.Point(22, 51);
+            this.lbl_pass.Name = "lbl_pass";
+            this.lbl_pass.Size = new System.Drawing.Size(410, 13);
+            this.lbl_pass.TabIndex = 1;
+            this.lbl_pass.Text = "Your password must be at least 6 characters and should include a combination";
             // 
-            // label3
+            // lbl_changePassword
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(20, 22);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(169, 25);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Change password";
+            this.lbl_changePassword.AutoSize = true;
+            this.lbl_changePassword.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_changePassword.Location = new System.Drawing.Point(20, 22);
+            this.lbl_changePassword.Name = "lbl_changePassword";
+            this.lbl_changePassword.Size = new System.Drawing.Size(169, 25);
+            this.lbl_changePassword.TabIndex = 0;
+            this.lbl_changePassword.Text = "Change password";
             // 
-            // button6
+            // btn_password
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(96)))), ((int)(((byte)(210)))));
-            this.button6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(421, 131);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(148, 34);
-            this.button6.TabIndex = 27;
-            this.button6.Text = "Password";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btn_password.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(96)))), ((int)(((byte)(210)))));
+            this.btn_password.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_password.ForeColor = System.Drawing.Color.White;
+            this.btn_password.Location = new System.Drawing.Point(421, 131);
+            this.btn_password.Name = "btn_password";
+            this.btn_password.Size = new System.Drawing.Size(148, 34);
+            this.btn_password.TabIndex = 27;
+            this.btn_password.Text = "Password";
+            this.btn_password.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btn_profile
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(244, 131);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 34);
-            this.button1.TabIndex = 26;
-            this.button1.Text = "My Profile";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_profile.BackColor = System.Drawing.Color.White;
+            this.btn_profile.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_profile.ForeColor = System.Drawing.Color.Black;
+            this.btn_profile.Location = new System.Drawing.Point(244, 131);
+            this.btn_profile.Name = "btn_profile";
+            this.btn_profile.Size = new System.Drawing.Size(150, 34);
+            this.btn_profile.TabIndex = 26;
+            this.btn_profile.Text = "My Profile";
+            this.btn_profile.UseVisualStyleBackColor = false;
+            this.btn_profile.Click += new System.EventHandler(this.btn_profile_Click);
             // 
             // label1
             // 
@@ -209,59 +209,59 @@
             this.panel1.AutoSize = true;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(44)))), ((int)(((byte)(67)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.btn_settings);
+            this.panel1.Controls.Add(this.btn_reviews);
+            this.panel1.Controls.Add(this.btn_bookings);
+            this.panel1.Controls.Add(this.btn_dashboard);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(170, 653);
             this.panel1.TabIndex = 23;
             // 
-            // button5
+            // btn_settings
             // 
-            this.button5.BackColor = System.Drawing.Color.White;
-            this.button5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(21, 348);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(113, 40);
-            this.button5.TabIndex = 17;
-            this.button5.Text = "Settings";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btn_settings.BackColor = System.Drawing.Color.White;
+            this.btn_settings.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_settings.Location = new System.Drawing.Point(21, 348);
+            this.btn_settings.Name = "btn_settings";
+            this.btn_settings.Size = new System.Drawing.Size(113, 40);
+            this.btn_settings.TabIndex = 17;
+            this.btn_settings.Text = "Settings";
+            this.btn_settings.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // btn_reviews
             // 
-            this.button4.BackColor = System.Drawing.Color.Silver;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(21, 264);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(113, 40);
-            this.button4.TabIndex = 17;
-            this.button4.Text = "Reviews";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btn_reviews.BackColor = System.Drawing.Color.Silver;
+            this.btn_reviews.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_reviews.Location = new System.Drawing.Point(21, 264);
+            this.btn_reviews.Name = "btn_reviews";
+            this.btn_reviews.Size = new System.Drawing.Size(113, 40);
+            this.btn_reviews.TabIndex = 17;
+            this.btn_reviews.Text = "Reviews";
+            this.btn_reviews.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btn_bookings
             // 
-            this.button3.BackColor = System.Drawing.Color.Silver;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(21, 180);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(113, 40);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Bookings";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btn_bookings.BackColor = System.Drawing.Color.Silver;
+            this.btn_bookings.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_bookings.Location = new System.Drawing.Point(21, 180);
+            this.btn_bookings.Name = "btn_bookings";
+            this.btn_bookings.Size = new System.Drawing.Size(113, 40);
+            this.btn_bookings.TabIndex = 2;
+            this.btn_bookings.Text = "Bookings";
+            this.btn_bookings.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btn_dashboard
             // 
-            this.button2.BackColor = System.Drawing.Color.Silver;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(21, 99);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(113, 40);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Dashboard";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btn_dashboard.BackColor = System.Drawing.Color.Silver;
+            this.btn_dashboard.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_dashboard.Location = new System.Drawing.Point(21, 99);
+            this.btn_dashboard.Name = "btn_dashboard";
+            this.btn_dashboard.Size = new System.Drawing.Size(113, 40);
+            this.btn_dashboard.TabIndex = 1;
+            this.btn_dashboard.Text = "Dashboard";
+            this.btn_dashboard.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
@@ -274,41 +274,27 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "DaMock Hotel";
             // 
-            // linkLabel1
+            // chckB_logout
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(96)))), ((int)(((byte)(210)))));
-            this.linkLabel1.Location = new System.Drawing.Point(245, 441);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(114, 17);
-            this.linkLabel1.TabIndex = 30;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Forgot password?";
-            this.linkLabel1.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(96)))), ((int)(((byte)(210)))));
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(248, 477);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(457, 20);
-            this.checkBox1.TabIndex = 31;
-            this.checkBox1.Text = "Log out of other devices. Choose this if someone else used your account.";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chckB_logout.AutoSize = true;
+            this.chckB_logout.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chckB_logout.Location = new System.Drawing.Point(244, 448);
+            this.chckB_logout.Name = "chckB_logout";
+            this.chckB_logout.Size = new System.Drawing.Size(457, 20);
+            this.chckB_logout.TabIndex = 31;
+            this.chckB_logout.Text = "Log out of other devices. Choose this if someone else used your account.";
+            this.chckB_logout.UseVisualStyleBackColor = true;
             // 
             // Frm_passwordSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1120, 652);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.chckB_logout);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_password);
+            this.Controls.Add(this.btn_profile);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Name = "Frm_passwordSettings";
@@ -326,26 +312,25 @@
 
         #endregion
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txt_confirmNewPassword;
+        private System.Windows.Forms.TextBox txt_newPassword;
+        private System.Windows.Forms.Label lbl_password;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_save;
+        private System.Windows.Forms.Button btn_cancel;
+        private System.Windows.Forms.Label lbl_pass;
+        private System.Windows.Forms.Label lbl_changePassword;
+        private System.Windows.Forms.Button btn_password;
+        private System.Windows.Forms.Button btn_profile;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_settings;
+        private System.Windows.Forms.Button btn_reviews;
+        private System.Windows.Forms.Button btn_bookings;
+        private System.Windows.Forms.Button btn_dashboard;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.TextBox txt_currentPassword;
+        private System.Windows.Forms.Label lbl_passw;
+        private System.Windows.Forms.CheckBox chckB_logout;
     }
 }

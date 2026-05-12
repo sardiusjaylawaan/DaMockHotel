@@ -117,7 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label4.Text" xml:space="preserve">
+  <data name="lbl_feedback.Text" xml:space="preserve">
     <value>Your feedback helps us improve our services and create better experiences
  for every guest at Damock Hotel. We truly appreciate you taking the time to share 
 your stay experience, suggestions, and honest thoughts with us.</value>

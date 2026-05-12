@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnl_dashboard = new System.Windows.Forms.Panel();
             this.btn_settings = new System.Windows.Forms.Button();
             this.btn_reviews = new System.Windows.Forms.Button();
             this.btn_bookings = new System.Windows.Forms.Button();
             this.btn_dashboard = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btn_review = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
@@ -57,27 +57,27 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.pnl_dashboard.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // pnl_dashboard
             // 
-            this.panel1.AutoSize = true;
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(44)))), ((int)(((byte)(67)))));
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.btn_settings);
-            this.panel1.Controls.Add(this.btn_reviews);
-            this.panel1.Controls.Add(this.btn_bookings);
-            this.panel1.Controls.Add(this.btn_dashboard);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(170, 653);
-            this.panel1.TabIndex = 24;
+            this.pnl_dashboard.AutoSize = true;
+            this.pnl_dashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(44)))), ((int)(((byte)(67)))));
+            this.pnl_dashboard.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnl_dashboard.Controls.Add(this.btn_settings);
+            this.pnl_dashboard.Controls.Add(this.btn_reviews);
+            this.pnl_dashboard.Controls.Add(this.btn_bookings);
+            this.pnl_dashboard.Controls.Add(this.btn_dashboard);
+            this.pnl_dashboard.Controls.Add(this.label2);
+            this.pnl_dashboard.Location = new System.Drawing.Point(0, 0);
+            this.pnl_dashboard.Name = "pnl_dashboard";
+            this.pnl_dashboard.Size = new System.Drawing.Size(170, 653);
+            this.pnl_dashboard.TabIndex = 24;
             // 
             // btn_settings
             // 
@@ -140,7 +140,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel2.Controls.Add(this.button6);
+            this.panel2.Controls.Add(this.btn_review);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.panel4);
@@ -155,17 +155,18 @@
             this.panel2.TabIndex = 25;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // button6
+            // btn_review
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(96)))), ((int)(((byte)(210)))));
-            this.button6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(557, 211);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(112, 32);
-            this.button6.TabIndex = 21;
-            this.button6.Text = "Review";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btn_review.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(96)))), ((int)(((byte)(210)))));
+            this.btn_review.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_review.ForeColor = System.Drawing.Color.White;
+            this.btn_review.Location = new System.Drawing.Point(557, 211);
+            this.btn_review.Name = "btn_review";
+            this.btn_review.Size = new System.Drawing.Size(112, 32);
+            this.btn_review.TabIndex = 21;
+            this.btn_review.Text = "Review";
+            this.btn_review.UseVisualStyleBackColor = false;
+            this.btn_review.Click += new System.EventHandler(this.btn_review_Click);
             // 
             // button1
             // 
@@ -386,11 +387,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1120, 652);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnl_dashboard);
             this.Name = "Frm_readReviews";
             this.Text = "DaMock Hotel - Reviews";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.pnl_dashboard.ResumeLayout(false);
+            this.pnl_dashboard.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -406,7 +407,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnl_dashboard;
         private System.Windows.Forms.Button btn_settings;
         private System.Windows.Forms.Button btn_reviews;
         private System.Windows.Forms.Button btn_bookings;
@@ -434,6 +435,6 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btn_review;
     }
 }

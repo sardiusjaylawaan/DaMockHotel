@@ -16,5 +16,12 @@ namespace DaMockHotel
         {
             InitializeComponent();
         }
+
+        private void btn_profile_Click(object sender, EventArgs e)
+        {
+            Frm_profileSettings profileSettings = new Frm_profileSettings();
+            profileSettings.Show();
+            this.Hide();
+        }
     }
 }

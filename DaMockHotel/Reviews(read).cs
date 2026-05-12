@@ -42,5 +42,12 @@ namespace DaMockHotel
             dashboard.Show();
             this.Close();
         }
+
+        private void btn_review_Click(object sender, EventArgs e)
+        {
+            Frm_writeReviews writeReviews = new Frm_writeReviews();
+            writeReviews.Show();
+            this.Close();
+        }
     }
 }

@@ -34,29 +34,29 @@
             this.btn_bookings = new System.Windows.Forms.Button();
             this.btn_dashboard = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.progressBar2 = new System.Windows.Forms.ProgressBar();
-            this.progressBar3 = new System.Windows.Forms.ProgressBar();
-            this.progressBar4 = new System.Windows.Forms.ProgressBar();
+            this.txt_search = new System.Windows.Forms.MaskedTextBox();
+            this.progBar_newBook = new System.Windows.Forms.ProgressBar();
+            this.progBar_schedRoom = new System.Windows.Forms.ProgressBar();
+            this.progBar_checkout = new System.Windows.Forms.ProgressBar();
+            this.progBar_checkin = new System.Windows.Forms.ProgressBar();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.progressBar5 = new System.Windows.Forms.ProgressBar();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.progBar_latestReviews = new System.Windows.Forms.ProgressBar();
+            this.calendar_month = new System.Windows.Forms.MonthCalendar();
+            this.pnl_customerSatisfaction = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.pnl_reservStatistic = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_welcome = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lbl_dontForget = new System.Windows.Forms.Label();
             this.btn_profile = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
+            this.pnl_customerSatisfaction.SuspendLayout();
+            this.pnl_reservStatistic.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -132,46 +132,46 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "DaMock Hotel";
             // 
-            // maskedTextBox1
+            // txt_search
             // 
-            this.maskedTextBox1.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(732, 24);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(205, 24);
-            this.maskedTextBox1.TabIndex = 2;
-            this.maskedTextBox1.Text = "Search";
+            this.txt_search.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.txt_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_search.Location = new System.Drawing.Point(732, 24);
+            this.txt_search.Name = "txt_search";
+            this.txt_search.Size = new System.Drawing.Size(205, 24);
+            this.txt_search.TabIndex = 2;
+            this.txt_search.Text = "Search";
             // 
-            // progressBar1
+            // progBar_newBook
             // 
-            this.progressBar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.progressBar1.ForeColor = System.Drawing.Color.White;
-            this.progressBar1.Location = new System.Drawing.Point(205, 85);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(218, 68);
-            this.progressBar1.TabIndex = 3;
+            this.progBar_newBook.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.progBar_newBook.ForeColor = System.Drawing.Color.White;
+            this.progBar_newBook.Location = new System.Drawing.Point(205, 85);
+            this.progBar_newBook.Name = "progBar_newBook";
+            this.progBar_newBook.Size = new System.Drawing.Size(218, 68);
+            this.progBar_newBook.TabIndex = 3;
             // 
-            // progressBar2
+            // progBar_schedRoom
             // 
-            this.progressBar2.ForeColor = System.Drawing.Color.White;
-            this.progressBar2.Location = new System.Drawing.Point(429, 85);
-            this.progressBar2.Name = "progressBar2";
-            this.progressBar2.Size = new System.Drawing.Size(206, 68);
-            this.progressBar2.TabIndex = 4;
+            this.progBar_schedRoom.ForeColor = System.Drawing.Color.White;
+            this.progBar_schedRoom.Location = new System.Drawing.Point(429, 85);
+            this.progBar_schedRoom.Name = "progBar_schedRoom";
+            this.progBar_schedRoom.Size = new System.Drawing.Size(206, 68);
+            this.progBar_schedRoom.TabIndex = 4;
             // 
-            // progressBar3
+            // progBar_checkout
             // 
-            this.progressBar3.Location = new System.Drawing.Point(860, 85);
-            this.progressBar3.Name = "progressBar3";
-            this.progressBar3.Size = new System.Drawing.Size(223, 68);
-            this.progressBar3.TabIndex = 5;
+            this.progBar_checkout.Location = new System.Drawing.Point(860, 85);
+            this.progBar_checkout.Name = "progBar_checkout";
+            this.progBar_checkout.Size = new System.Drawing.Size(223, 68);
+            this.progBar_checkout.TabIndex = 5;
             // 
-            // progressBar4
+            // progBar_checkin
             // 
-            this.progressBar4.Location = new System.Drawing.Point(641, 85);
-            this.progressBar4.Name = "progressBar4";
-            this.progressBar4.Size = new System.Drawing.Size(207, 68);
-            this.progressBar4.TabIndex = 6;
+            this.progBar_checkin.Location = new System.Drawing.Point(641, 85);
+            this.progBar_checkin.Name = "progBar_checkin";
+            this.progBar_checkin.Size = new System.Drawing.Size(207, 68);
+            this.progBar_checkin.TabIndex = 6;
             // 
             // label3
             // 
@@ -222,30 +222,30 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "Check-out";
             // 
-            // progressBar5
+            // progBar_latestReviews
             // 
-            this.progressBar5.BackColor = System.Drawing.Color.White;
-            this.progressBar5.Location = new System.Drawing.Point(205, 367);
-            this.progressBar5.Name = "progressBar5";
-            this.progressBar5.Size = new System.Drawing.Size(634, 195);
-            this.progressBar5.TabIndex = 11;
+            this.progBar_latestReviews.BackColor = System.Drawing.Color.White;
+            this.progBar_latestReviews.Location = new System.Drawing.Point(205, 367);
+            this.progBar_latestReviews.Name = "progBar_latestReviews";
+            this.progBar_latestReviews.Size = new System.Drawing.Size(634, 195);
+            this.progBar_latestReviews.TabIndex = 11;
             // 
-            // monthCalendar1
+            // calendar_month
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(860, 172);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 12;
-            this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
+            this.calendar_month.Location = new System.Drawing.Point(860, 172);
+            this.calendar_month.Name = "calendar_month";
+            this.calendar_month.TabIndex = 12;
+            this.calendar_month.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
             // 
-            // panel3
+            // pnl_customerSatisfaction
             // 
-            this.panel3.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.label8);
-            this.panel3.Location = new System.Drawing.Point(860, 367);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(227, 257);
-            this.panel3.TabIndex = 13;
+            this.pnl_customerSatisfaction.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.pnl_customerSatisfaction.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnl_customerSatisfaction.Controls.Add(this.label8);
+            this.pnl_customerSatisfaction.Location = new System.Drawing.Point(860, 367);
+            this.pnl_customerSatisfaction.Name = "pnl_customerSatisfaction";
+            this.pnl_customerSatisfaction.Size = new System.Drawing.Size(227, 257);
+            this.pnl_customerSatisfaction.TabIndex = 13;
             // 
             // label8
             // 
@@ -257,15 +257,15 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "Customer Satisfaction";
             // 
-            // panel4
+            // pnl_reservStatistic
             // 
-            this.panel4.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.label7);
-            this.panel4.Location = new System.Drawing.Point(205, 171);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(643, 163);
-            this.panel4.TabIndex = 14;
+            this.pnl_reservStatistic.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.pnl_reservStatistic.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnl_reservStatistic.Controls.Add(this.label7);
+            this.pnl_reservStatistic.Location = new System.Drawing.Point(205, 171);
+            this.pnl_reservStatistic.Name = "pnl_reservStatistic";
+            this.pnl_reservStatistic.Size = new System.Drawing.Size(643, 163);
+            this.pnl_reservStatistic.TabIndex = 14;
             // 
             // label7
             // 
@@ -278,15 +278,15 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "Reservation Statistic";
             // 
-            // label1
+            // lbl_welcome
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(198, 5);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(318, 37);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "Welcome to Dashboard";
+            this.lbl_welcome.AutoSize = true;
+            this.lbl_welcome.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_welcome.Location = new System.Drawing.Point(198, 5);
+            this.lbl_welcome.Name = "lbl_welcome";
+            this.lbl_welcome.Size = new System.Drawing.Size(318, 37);
+            this.lbl_welcome.TabIndex = 15;
+            this.lbl_welcome.Text = "Welcome to Dashboard";
             // 
             // label9
             // 
@@ -298,15 +298,15 @@
             this.label9.TabIndex = 17;
             this.label9.Text = "Latest Reviews";
             // 
-            // label10
+            // lbl_dontForget
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.label10.Location = new System.Drawing.Point(202, 42);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(261, 17);
-            this.label10.TabIndex = 18;
-            this.label10.Text = "Don\'t forget to control the activity that exist";
+            this.lbl_dontForget.AutoSize = true;
+            this.lbl_dontForget.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.lbl_dontForget.Location = new System.Drawing.Point(202, 42);
+            this.lbl_dontForget.Name = "lbl_dontForget";
+            this.lbl_dontForget.Size = new System.Drawing.Size(261, 17);
+            this.lbl_dontForget.TabIndex = 18;
+            this.lbl_dontForget.Text = "Don\'t forget to control the activity that exist";
             // 
             // btn_profile
             // 
@@ -327,31 +327,31 @@
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1120, 652);
             this.Controls.Add(this.btn_profile);
-            this.Controls.Add(this.label10);
+            this.Controls.Add(this.lbl_dontForget);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.maskedTextBox1);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.monthCalendar1);
-            this.Controls.Add(this.progressBar5);
+            this.Controls.Add(this.lbl_welcome);
+            this.Controls.Add(this.txt_search);
+            this.Controls.Add(this.pnl_reservStatistic);
+            this.Controls.Add(this.pnl_customerSatisfaction);
+            this.Controls.Add(this.calendar_month);
+            this.Controls.Add(this.progBar_latestReviews);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.progressBar4);
-            this.Controls.Add(this.progressBar3);
-            this.Controls.Add(this.progressBar2);
-            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.progBar_checkin);
+            this.Controls.Add(this.progBar_checkout);
+            this.Controls.Add(this.progBar_schedRoom);
+            this.Controls.Add(this.progBar_newBook);
             this.Controls.Add(this.panel1);
             this.Name = "Frm_Dashboard";
             this.Text = "DaMock Hotel - Dashboard";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
+            this.pnl_customerSatisfaction.ResumeLayout(false);
+            this.pnl_customerSatisfaction.PerformLayout();
+            this.pnl_reservStatistic.ResumeLayout(false);
+            this.pnl_reservStatistic.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -360,30 +360,30 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox txt_search;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.ProgressBar progressBar2;
-        private System.Windows.Forms.ProgressBar progressBar3;
-        private System.Windows.Forms.ProgressBar progressBar4;
+        private System.Windows.Forms.ProgressBar progBar_newBook;
+        private System.Windows.Forms.ProgressBar progBar_schedRoom;
+        private System.Windows.Forms.ProgressBar progBar_checkout;
+        private System.Windows.Forms.ProgressBar progBar_checkin;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ProgressBar progressBar5;
-        private System.Windows.Forms.MonthCalendar monthCalendar1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.ProgressBar progBar_latestReviews;
+        private System.Windows.Forms.MonthCalendar calendar_month;
+        private System.Windows.Forms.Panel pnl_customerSatisfaction;
+        private System.Windows.Forms.Panel pnl_reservStatistic;
         private System.Windows.Forms.Label label7;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_welcome;
         private System.Windows.Forms.Button btn_settings;
         private System.Windows.Forms.Button btn_reviews;
         private System.Windows.Forms.Button btn_bookings;
         private System.Windows.Forms.Button btn_dashboard;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lbl_dontForget;
         private System.Windows.Forms.Button btn_profile;
     }
 }

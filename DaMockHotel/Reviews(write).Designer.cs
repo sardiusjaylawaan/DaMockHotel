@@ -29,188 +29,192 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_writeReviews));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.pnl_dashboard = new System.Windows.Forms.Panel();
+            this.btn_settings = new System.Windows.Forms.Button();
+            this.btn_reviews = new System.Windows.Forms.Button();
+            this.btn_bookings = new System.Windows.Forms.Button();
+            this.btn_dashboard = new System.Windows.Forms.Button();
+            this.lbl_hotel = new System.Windows.Forms.Label();
+            this.pnl_review = new System.Windows.Forms.Panel();
+            this.pnl_feedback = new System.Windows.Forms.Panel();
+            this.lbl_feedback = new System.Windows.Forms.Label();
+            this.btn_submit = new System.Windows.Forms.Button();
+            this.txt_review = new System.Windows.Forms.TextBox();
+            this.lbl_stories = new System.Windows.Forms.Label();
+            this.lbl_review = new System.Windows.Forms.Label();
+            this.pnl_dashboard.SuspendLayout();
+            this.pnl_review.SuspendLayout();
+            this.pnl_feedback.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // pnl_dashboard
             // 
-            this.panel1.AutoSize = true;
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(44)))), ((int)(((byte)(67)))));
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(170, 653);
-            this.panel1.TabIndex = 25;
+            this.pnl_dashboard.AutoSize = true;
+            this.pnl_dashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(44)))), ((int)(((byte)(67)))));
+            this.pnl_dashboard.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnl_dashboard.Controls.Add(this.btn_settings);
+            this.pnl_dashboard.Controls.Add(this.btn_reviews);
+            this.pnl_dashboard.Controls.Add(this.btn_bookings);
+            this.pnl_dashboard.Controls.Add(this.btn_dashboard);
+            this.pnl_dashboard.Controls.Add(this.lbl_hotel);
+            this.pnl_dashboard.Location = new System.Drawing.Point(0, 0);
+            this.pnl_dashboard.Name = "pnl_dashboard";
+            this.pnl_dashboard.Size = new System.Drawing.Size(170, 653);
+            this.pnl_dashboard.TabIndex = 25;
             // 
-            // button5
+            // btn_settings
             // 
-            this.button5.BackColor = System.Drawing.Color.Silver;
-            this.button5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(21, 348);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(113, 40);
-            this.button5.TabIndex = 17;
-            this.button5.Text = "Settings";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btn_settings.BackColor = System.Drawing.Color.Silver;
+            this.btn_settings.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_settings.Location = new System.Drawing.Point(21, 348);
+            this.btn_settings.Name = "btn_settings";
+            this.btn_settings.Size = new System.Drawing.Size(113, 40);
+            this.btn_settings.TabIndex = 17;
+            this.btn_settings.Text = "Settings";
+            this.btn_settings.UseVisualStyleBackColor = false;
+            this.btn_settings.Click += new System.EventHandler(this.btn_settings_Click);
             // 
-            // button4
+            // btn_reviews
             // 
-            this.button4.BackColor = System.Drawing.Color.White;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(21, 264);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(113, 40);
-            this.button4.TabIndex = 17;
-            this.button4.Text = "Reviews";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btn_reviews.BackColor = System.Drawing.Color.White;
+            this.btn_reviews.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_reviews.Location = new System.Drawing.Point(21, 264);
+            this.btn_reviews.Name = "btn_reviews";
+            this.btn_reviews.Size = new System.Drawing.Size(113, 40);
+            this.btn_reviews.TabIndex = 17;
+            this.btn_reviews.Text = "Reviews";
+            this.btn_reviews.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btn_bookings
             // 
-            this.button3.BackColor = System.Drawing.Color.Silver;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(21, 180);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(113, 40);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Bookings";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btn_bookings.BackColor = System.Drawing.Color.Silver;
+            this.btn_bookings.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_bookings.Location = new System.Drawing.Point(21, 180);
+            this.btn_bookings.Name = "btn_bookings";
+            this.btn_bookings.Size = new System.Drawing.Size(113, 40);
+            this.btn_bookings.TabIndex = 2;
+            this.btn_bookings.Text = "Bookings";
+            this.btn_bookings.UseVisualStyleBackColor = false;
+            this.btn_bookings.Click += new System.EventHandler(this.btn_bookings_Click);
             // 
-            // button2
+            // btn_dashboard
             // 
-            this.button2.BackColor = System.Drawing.Color.Silver;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(21, 99);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(113, 40);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Dashboard";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btn_dashboard.BackColor = System.Drawing.Color.Silver;
+            this.btn_dashboard.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_dashboard.Location = new System.Drawing.Point(21, 99);
+            this.btn_dashboard.Name = "btn_dashboard";
+            this.btn_dashboard.Size = new System.Drawing.Size(113, 40);
+            this.btn_dashboard.TabIndex = 1;
+            this.btn_dashboard.Text = "Dashboard";
+            this.btn_dashboard.UseVisualStyleBackColor = false;
+            this.btn_dashboard.Click += new System.EventHandler(this.btn_dashboard_Click);
             // 
-            // label2
+            // lbl_hotel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(26, 11);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(108, 20);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "DaMock Hotel";
+            this.lbl_hotel.AutoSize = true;
+            this.lbl_hotel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_hotel.ForeColor = System.Drawing.Color.White;
+            this.lbl_hotel.Location = new System.Drawing.Point(26, 11);
+            this.lbl_hotel.Name = "lbl_hotel";
+            this.lbl_hotel.Size = new System.Drawing.Size(108, 20);
+            this.lbl_hotel.TabIndex = 0;
+            this.lbl_hotel.Text = "DaMock Hotel";
             // 
-            // panel2
+            // pnl_review
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(239, 49);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(818, 538);
-            this.panel2.TabIndex = 26;
+            this.pnl_review.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pnl_review.Controls.Add(this.pnl_feedback);
+            this.pnl_review.Controls.Add(this.btn_submit);
+            this.pnl_review.Controls.Add(this.txt_review);
+            this.pnl_review.Controls.Add(this.lbl_stories);
+            this.pnl_review.Controls.Add(this.lbl_review);
+            this.pnl_review.Location = new System.Drawing.Point(239, 49);
+            this.pnl_review.Name = "pnl_review";
+            this.pnl_review.Size = new System.Drawing.Size(818, 538);
+            this.pnl_review.TabIndex = 26;
             // 
-            // panel3
+            // pnl_feedback
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(44)))), ((int)(((byte)(67)))));
-            this.panel3.Controls.Add(this.label4);
-            this.panel3.ForeColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(73, 345);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(667, 117);
-            this.panel3.TabIndex = 5;
+            this.pnl_feedback.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(44)))), ((int)(((byte)(67)))));
+            this.pnl_feedback.Controls.Add(this.lbl_feedback);
+            this.pnl_feedback.ForeColor = System.Drawing.Color.White;
+            this.pnl_feedback.Location = new System.Drawing.Point(73, 345);
+            this.pnl_feedback.Name = "pnl_feedback";
+            this.pnl_feedback.Size = new System.Drawing.Size(667, 117);
+            this.pnl_feedback.TabIndex = 5;
             // 
-            // label4
+            // lbl_feedback
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(41, 27);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(580, 63);
-            this.label4.TabIndex = 4;
-            this.label4.Text = resources.GetString("label4.Text");
-            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lbl_feedback.AutoSize = true;
+            this.lbl_feedback.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_feedback.Location = new System.Drawing.Point(41, 27);
+            this.lbl_feedback.Name = "lbl_feedback";
+            this.lbl_feedback.Size = new System.Drawing.Size(580, 63);
+            this.lbl_feedback.TabIndex = 4;
+            this.lbl_feedback.Text = resources.GetString("lbl_feedback.Text");
+            this.lbl_feedback.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // button1
+            // btn_submit
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(96)))), ((int)(((byte)(210)))));
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(509, 244);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Submit";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_submit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(96)))), ((int)(((byte)(210)))));
+            this.btn_submit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_submit.ForeColor = System.Drawing.Color.White;
+            this.btn_submit.Location = new System.Drawing.Point(509, 244);
+            this.btn_submit.Name = "btn_submit";
+            this.btn_submit.Size = new System.Drawing.Size(110, 23);
+            this.btn_submit.TabIndex = 3;
+            this.btn_submit.Text = "Submit";
+            this.btn_submit.UseVisualStyleBackColor = false;
+            this.btn_submit.Click += new System.EventHandler(this.btn_submit_Click);
             // 
-            // textBox1
+            // txt_review
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.Gray;
-            this.textBox1.Location = new System.Drawing.Point(160, 203);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(459, 26);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.Text = "What would you like to review?";
+            this.txt_review.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_review.ForeColor = System.Drawing.Color.Gray;
+            this.txt_review.Location = new System.Drawing.Point(160, 203);
+            this.txt_review.Name = "txt_review";
+            this.txt_review.Size = new System.Drawing.Size(459, 26);
+            this.txt_review.TabIndex = 2;
+            this.txt_review.Text = "What would you like to review?";
             // 
-            // label3
+            // lbl_stories
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(123, 98);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(560, 60);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Stories like yours are what helps travelers have better trips. \r\nShare your exper" +
+            this.lbl_stories.AutoSize = true;
+            this.lbl_stories.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_stories.Location = new System.Drawing.Point(123, 98);
+            this.lbl_stories.Name = "lbl_stories";
+            this.lbl_stories.Size = new System.Drawing.Size(560, 60);
+            this.lbl_stories.TabIndex = 1;
+            this.lbl_stories.Text = "Stories like yours are what helps travelers have better trips. \r\nShare your exper" +
     "ience and help out a fellow traveler!";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lbl_stories.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label1
+            // lbl_review
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(44)))), ((int)(((byte)(67)))));
-            this.label1.Location = new System.Drawing.Point(99, 51);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(617, 47);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Write a review, make someone\'s trip";
+            this.lbl_review.AutoSize = true;
+            this.lbl_review.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_review.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(44)))), ((int)(((byte)(67)))));
+            this.lbl_review.Location = new System.Drawing.Point(99, 51);
+            this.lbl_review.Name = "lbl_review";
+            this.lbl_review.Size = new System.Drawing.Size(617, 47);
+            this.lbl_review.TabIndex = 0;
+            this.lbl_review.Text = "Write a review, make someone\'s trip";
             // 
             // Frm_writeReviews
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1120, 652);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnl_review);
+            this.Controls.Add(this.pnl_dashboard);
             this.Name = "Frm_writeReviews";
             this.Text = "DaMock Hotel - Reviews";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.pnl_dashboard.ResumeLayout(false);
+            this.pnl_dashboard.PerformLayout();
+            this.pnl_review.ResumeLayout(false);
+            this.pnl_review.PerformLayout();
+            this.pnl_feedback.ResumeLayout(false);
+            this.pnl_feedback.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -218,18 +222,18 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel pnl_dashboard;
+        private System.Windows.Forms.Button btn_settings;
+        private System.Windows.Forms.Button btn_reviews;
+        private System.Windows.Forms.Button btn_bookings;
+        private System.Windows.Forms.Button btn_dashboard;
+        private System.Windows.Forms.Label lbl_hotel;
+        private System.Windows.Forms.Panel pnl_review;
+        private System.Windows.Forms.Label lbl_review;
+        private System.Windows.Forms.Label lbl_stories;
+        private System.Windows.Forms.Button btn_submit;
+        private System.Windows.Forms.TextBox txt_review;
+        private System.Windows.Forms.Panel pnl_feedback;
+        private System.Windows.Forms.Label lbl_feedback;
     }
 }
