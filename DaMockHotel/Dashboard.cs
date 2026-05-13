@@ -13,10 +13,10 @@ namespace DaMockHotel
 {
     public partial class Frm_Dashboard : Form
     {
-        public Frm_Dashboard()
+        public Frm_Dashboard(string text)
         {
             InitializeComponent();
-            
+            Text = text;
         }
 
         private void label3_Click(object sender, EventArgs e)

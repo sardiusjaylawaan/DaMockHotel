@@ -38,7 +38,7 @@ namespace DaMockHotel
 
         private void btn_dashboard_Click(object sender, EventArgs e)
         {
-            Frm_Dashboard dashboard = new Frm_Dashboard();
+            Frm_Dashboard dashboard = new Frm_Dashboard("Dashboard");
             dashboard.Show();
             this.Close();
         }
